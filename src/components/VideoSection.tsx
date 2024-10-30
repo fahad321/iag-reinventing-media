@@ -1,33 +1,29 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 const VideoSection: React.FC = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
   return (
-    <motion.div
-      ref={ref}
-      className="min-h-screen flex flex-col items-center justify-center bg-gray-800 text-white p-10"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: inView ? 1 : 0 }}
-      transition={{ duration: 1 }}
-    >
-      <h2 className="text-4xl font-bold mb-8">Our Vision</h2>
-      <motion.div
-        className="w-full max-w-4xl"
-        initial={{ scale: 0.8 }}
-        animate={{ scale: inView ? 1 : 0.8 }}
-        transition={{ duration: 0.5 }}
+    <div className="min-h-screen bg-gray-900 text-white py-20 px-4 flex items-center justify-center">
+      <motion.div 
+        className="max-w-4xl w-full"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
       >
-        <video className="w-full rounded-lg shadow-2xl" controls>
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <h2 className="text-4xl font-bold mb-8 text-center">Our Vision</h2>
+        <div className="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-2xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded-lg">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-lg"
+            ></iframe>
+          </div>
+        </div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -5,6 +5,7 @@ import VideoSection from '../components/VideoSection';
 import ParallaxSection from '../components/ParallaxSection';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
+import TextContent from '../components/TextContent';
 
 const HomePage: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
       <Header />
       <div id="hero"><HeroBanner /></div>
       <div id="parallax"><ParallaxSection /></div>
+      <TextContent/>
       <Carousel />
       <VideoSection />
       <Footer />
