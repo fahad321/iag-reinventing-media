@@ -29,6 +29,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.login-page {
+  color: #646cff;
+  background-color: #1a1a1a;
+}
+
+.login-text{
+  color: #646cff;
+  
+}
+
 a {
   font-weight: 500;
   color: #646cff;
