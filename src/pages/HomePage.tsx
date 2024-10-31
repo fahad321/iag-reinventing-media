@@ -6,6 +6,7 @@ import ParallaxSection from '../components/ParallaxSection';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import TextContent from '../components/TextContent';
+import CarouselImages from '../components/CarouselImages';
 
 const HomePage: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
       <TextContent/>
       <Carousel />
       <VideoSection />
+      <CarouselImages/>
       <Footer />
     </motion.div>
   );
