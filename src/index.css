@@ -209,3 +209,85 @@ ul.slick-dots li button {
     inset 0 0 15px rgba(255, 0, 119, 0.4);
 }
 
+/* Styles for hero section  */
+#container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#container div{
+  background-color: grey;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.margin-test{
+  margin-top: 40px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.vl{
+  border-left: 6px solid green;
+  height: 1100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 2;
+}
+
+.line1{
+  border-top: 1px dashed red;
+  width: 200px;
+  margin-left: 310px;
+}
+
+.line2{
+  border-top: 1px dashed red;
+  width: 200px;
+  margin-left: 510px;
+}
+
+.line3{
+  border-top: 1px dashed red;
+  width: 200px;
+  margin-left: 310px;
+}
+
+.line4{
+  border-top: 1px dashed red;
+  width: 200px;
+  margin-left: 510px;
+}
+
+#container .timelineLeft{
+  background-color: red;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+#container .timelineRight{
+  background-color: green;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  z-index: 2;
+  margin-left: 700px;
+}
+
+.descpLeft{
+  margin-left: 90px;
+}
+
+.descpRight{
+  margin-left: 600px;
+}
+
+.margin-test2{
+  margin-top: 150px;
+}
+/* Styles for hero section  */
