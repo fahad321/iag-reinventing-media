@@ -1,0 +1,194 @@
+// Styles for hero section
+
+
+
+#container1 {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+#container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+#container1 img {
+
+    border-radius: 50%;
+
+    height: 200px;
+
+    width: 200px;
+
+}
+
+
+#container img {
+
+    border-radius: 50%;
+
+    height: 150px;
+
+    width: 150px;
+
+}
+
+
+.margin-test {
+
+    margin-top: 40px;
+
+    margin-left: 150px;
+
+    margin-right: 150px;
+
+}
+
+
+.vl {
+
+    border-left: 6px solid green;
+
+    height: 1100px;
+
+    position: absolute;
+
+    left: 50%;
+
+    margin-left: -3px;
+
+    z-index: 2;
+
+}
+
+
+.line1 {
+
+    border-top: 1px dashed red;
+
+    width: 200px;
+
+    margin-left: 310px;
+
+}
+
+
+.line2 {
+
+    border-top: 1px dashed red;
+
+    width: 200px;
+
+    margin-left: 510px;
+
+}
+
+
+.line3 {
+
+    border-top: 1px dashed red;
+
+    width: 200px;
+
+    margin-left: 310px;
+
+}
+
+
+.line4 {
+
+    border-top: 1px dashed red;
+
+    width: 200px;
+
+    margin-left: 510px;
+
+}
+
+
+#container .timelineLeft {
+
+    margin-left: 150px;
+
+    margin-top: 50px;
+
+}
+
+
+#container .timelineRight {
+
+    z-index: 2;
+
+    margin-left: 700px;
+
+}
+
+
+.descpLeft {
+
+    margin-left: 90px;
+
+}
+
+
+.descpRight {
+
+    margin-left: 600px;
+
+}
+
+
+.margin-test2 {
+
+    margin-top: 150px;
+
+}
+
+
+#ThreeCircles {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-left: 200px;
+
+    padding-right: 200px;
+
+    padding-bottom: 50px;
+
+}
+
+
+#ThreeCircles div {
+
+    padding: 25px;
+
+    border: 2px solid;
+
+    border-color: black;
+
+    border-radius: 50%;
+
+    height: 150px;
+
+    width: 150px;
+
+    text-align: center;
+
+}
+
+.hero-section--banner-image{
+    height: 100vh;
+    width: 100%;
+}
+
+/* Styles for hero section */

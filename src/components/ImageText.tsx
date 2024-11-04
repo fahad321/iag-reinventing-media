@@ -19,10 +19,10 @@ const ImageText: React.FC<ImageTextProps> = ({ imageUrl, altText, text, layout }
   const textClasses = 'w-1/2 p-6 flex items-center';
 
   return (
-    <div className={`${containerClasses[layout]} bg-gray-100 rounded-lg overflow-hidden shadow-lg`}>
+    <div className={`${containerClasses[layout]}   overflow-hidden `}>
       <img src={imageUrl} alt={altText} className={imageClasses} />
       <div className={textClasses}>
-        <p className="text-gray-800">{text}</p>
+        <p className="text-wt">{text}</p>
       </div>
     </div>
   );

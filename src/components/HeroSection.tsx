@@ -5,7 +5,7 @@ import ImageText from '../components/ImageText';
 const HeroSection: React.FC = () => {
   return (
     <motion.div 
-      className="column-test min-h-screen bg-gradient-to-r from-purple-600 to-indigo-600 flex items-center justify-center text-white text-center px-4"
+      className="column-test min-h-screen bg-gradient-to-r  flex items-center justify-center text-white text-center px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -182,7 +182,7 @@ const HeroSection: React.FC = () => {
         layout="left"
       />
 
-      <img src="assets/images/AFI_Plane.jpg" alt="AFI Plane"/>
+      <img className='hero-section--banner-image' src="assets/images/AFI_Plane.jpg" alt="AFI Plane"/>
 
       <motion.p 
           className="text-m md:text-m mb-8 margin-test"

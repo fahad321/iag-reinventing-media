@@ -87,7 +87,7 @@ const Carousel: React.FC = () => {
                 <div
                     key={section.id}
                     ref={sectionRefs.current[index]}
-                    className=""
+                    className="carousel__section--background"
                 >
                     {React.createElement(section.component)}
                 </div>
