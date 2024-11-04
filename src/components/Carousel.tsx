@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import HeroSection from './HeroSection';
 import OurBeliefSection from './OurBeliefSection';
@@ -11,52 +11,87 @@ const sections = [
 ];
 
 const Carousel: React.FC = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null); // Allow null when no section is active
+    const sectionRefs = useRef(sections.map(() => React.createRef<HTMLDivElement>()));
 
-    const handleDotClick = (index: number) => {
-        setActiveIndex(index);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + window.innerHeight / 2; // Center of the viewport
+            let newActiveIndex: number | null = null;
+
+            sectionRefs.current.forEach((ref, index) => {
+                const element = ref.current;
+                if (element) {
+                    const { top, bottom } = element.getBoundingClientRect();
+                    const elementTop = top + window.scrollY;
+                    const elementBottom = bottom + window.scrollY;
+
+                    // Check if section is in the viewport (either partially or fully)
+                    if (
+                        scrollPosition >= elementTop &&
+                        scrollPosition <= elementBottom
+                    ) {
+                        newActiveIndex = index;
+                    }
+                }
+            });
+
+            // Set activeIndex to null if no section is visible
+            setActiveIndex(newActiveIndex);
+        };
+
+        // Initial check
+        handleScroll();
+
+        // Add scroll listener
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        // Cleanup
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <div className="relative flex flex-col items-center justify-center text-center py-20 bg-gray-900 min-h-screen">
-            <AnimatePresence mode="wait">
-                <motion.h1
-                    key={activeIndex}
-                    className="text-5xl font-bold text-purple-400 mb-8"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -50 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    {sections[activeIndex].title}
-                </motion.h1>
-            </AnimatePresence>
-
-            <div className="absolute left-8 top-1/2 transform -translate-y-1/2 flex flex-col space-y-6">
-                {sections.map((_, index) => (
+        <div className="relative">
+            <div className="fixed left-8 top-1/2 transform -translate-y-1/2 flex flex-col space-y-6 z-50">
+                {sections.map((section, index) => (
                     <motion.div
-                        key={index}
-                        onClick={() => handleDotClick(index)}
-                        className={`w-6 h-6 rounded-full cursor-pointer ${activeIndex === index ? 'bg-purple-400' : 'bg-gray-500'
-                            }`}
+                        key={section.id}
+                        className={`w-6 h-6 rounded-full cursor-pointer border-2 border-purple-400 relative group`}
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.9 }}
-                    />
+                        onClick={() => {
+                            sectionRefs.current[index].current?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                    >
+                        <motion.div
+                            className="absolute inset-0.5 bg-purple-400 rounded-full"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: activeIndex === index ? 1 : 0 }}
+                            transition={{ duration: 0.3 }}
+                        />
+                        <AnimatePresence>
+                            <motion.span
+                                className="absolute left-full ml-2 text-sm text-white whitespace-nowrap"
+                                initial={{ opacity: 0, x: -10 }}
+                                whileHover={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -10 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {section.title}
+                            </motion.span>
+                        </AnimatePresence>
+                    </motion.div>
                 ))}
             </div>
-
-            <AnimatePresence mode="wait">
-                <motion.div
-                    key={activeIndex}
-                    className="w-3/4 bg-gray-800 text-white p-10 rounded-lg shadow-lg"
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -100 }}
-                    transition={{ duration: 0.5 }}
+            {sections.map((section, index) => (
+                <div
+                    key={section.id}
+                    ref={sectionRefs.current[index]}
+                    className="h-screen"
                 >
-                    {React.createElement(sections[activeIndex].component)}
-                </motion.div>
-            </AnimatePresence>
+                    {React.createElement(section.component)}
+                </div>
+            ))}
         </div>
     );
 };

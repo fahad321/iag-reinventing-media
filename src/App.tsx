@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginPage from './components/LoginPage';
+import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 const App: React.FC = () => {
   return (
     <ParallaxProvider>
-      
+
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />

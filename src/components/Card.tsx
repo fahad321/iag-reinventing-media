@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import withStyleWrapper from './withStyleWrapper';
 
 interface CardProps {
   size?: 'small' | 'medium' | 'large';
@@ -26,4 +27,4 @@ const Card: React.FC<CardProps> = ({ size = 'medium', children }) => {
   );
 };
 
-export default Card;
+export default withStyleWrapper(Card);

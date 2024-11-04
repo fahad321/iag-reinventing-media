@@ -9,6 +9,7 @@ import TextContent from '../components/TextContent';
 import CarouselImages from '../components/CarouselImages';
 import Card from '../components/Card';
 import ImageText from '../components/ImageText';
+import SlideExample from '../components/SlideExample';
 
 const HomePage: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const HomePage: React.FC = () => {
       transition={{ duration: 1 }}
     >
       <Header />
-      <div id="hero"><HeroBanner /></div>
+      <div id="heroBanner"><HeroBanner /></div>
       <div id="parallax"><ParallaxSection /></div>
       <TextContent />
       <Carousel />
@@ -36,6 +37,10 @@ const HomePage: React.FC = () => {
           <h2 className="text-3xl font-bold mb-6">Large Card</h2>
           <p>This is a large card with even more content and space.</p>
         </Card>
+        <Card size="small" className="custom-card-style">
+          <h2 className="text-xl font-bold mb-2">Small Card</h2>
+          <p>This is a small card with custom content.</p>
+        </Card>
       </div>
       <ImageText
         imageUrl="/assets/images/AFI_Plane.jpg"
@@ -46,10 +51,13 @@ const HomePage: React.FC = () => {
       <ImageText
         imageUrl="/assets/images/AFI Ad bundle.png"
         altText="AFI Ad Bundle"
-        text="This is a description of the AFI Ad Bundle."
+        text="In under 3 months we collaborated with IAG’s marketing and in house media team to build a robust annual media approach for their entire portfolio. ​
+
+This not only helped prioritise and focus their approach to market, but it spotlighted critical gaps and untapped opportunities – from brand partnerships, digital maturity, media innovation and, most importantly, quantifying marketing’s impact on growth."
         layout="right"
       />
       <VideoSection />
+      <SlideExample/>
       <CarouselImages />
       <Footer />
     </motion.div>
