@@ -10,7 +10,6 @@
 @import 'slick-carousel/slick/slick-theme.css';
 
 
-@import './login-page.scss';
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -160,15 +159,15 @@ ul.slick-dots {
   position: relative;
   padding: 10px;
   border-radius: 15px;
-  background: linear-gradient(black, black) padding-box, 
-              linear-gradient(90deg, #6e00ff, #ff0077, #ff0077) border-box;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(90deg, #6e00ff, #ff0077, #ff0077) border-box;
   border: 4px solid transparent;
   z-index: 1;
   overflow: hidden;
-  box-shadow: 
-    0 0 10px rgba(110, 0, 255, 0.5), 
-    0 0 20px rgba(255, 0, 119, 0.5), 
-    inset 0 0 10px rgba(110, 0, 255, 0.4), 
+  box-shadow:
+    0 0 10px rgba(110, 0, 255, 0.5),
+    0 0 20px rgba(255, 0, 119, 0.5),
+    inset 0 0 10px rgba(110, 0, 255, 0.4),
     inset 0 0 15px rgba(255, 0, 119, 0.4);
 
   &::before,
@@ -202,70 +201,200 @@ ul.slick-dots {
 }
 
 // Styles for hero section
-#container {
-  display: flex;
-  justify-content: space-between;
 
-  div {
-    background-color: grey;
+
+
+  #container1 {
+
+    display: flex;
+
+    justify-content: space-between;
+
+  }
+
+
+  #container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+  }
+
+
+  #container1 img {
+
     border-radius: 50%;
+
     height: 200px;
+
     width: 200px;
+
   }
 
-  .timelineLeft {
-    background-color: red;
+
+  #container img {
+
     border-radius: 50%;
+
     height: 150px;
+
     width: 150px;
+
+  }
+
+
+  .margin-test {
+
+    margin-top: 40px;
+
     margin-left: 150px;
-    margin-top: 50px;
+
+    margin-right: 150px;
+
   }
 
-  .timelineRight {
-    background-color: green;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
+
+  .vl {
+
+    border-left: 6px solid green;
+
+    height: 1100px;
+
+    position: absolute;
+
+    left: 50%;
+
+    margin-left: -3px;
+
     z-index: 2;
-    margin-left: 700px;
+
   }
-}
 
-.margin-test {
-  margin-top: 40px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
 
-.vl {
-  border-left: 6px solid green;
-  height: 1100px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  z-index: 2;
-}
+  .line1 {
 
-@for $i from 1 through 4 {
-  .line#{$i} {
     border-top: 1px dashed red;
+
     width: 200px;
-    margin-left: if($i % 2 == 0, 510px, 310px);
+
+    margin-left: 310px;
+
   }
-}
 
-.descpLeft {
-  margin-left: 90px;
-}
 
-.descpRight {
-  margin-left: 600px;
-}
+  .line2 {
 
-.margin-test2 {
-  margin-top: 150px;
-}
+    border-top: 1px dashed red;
+
+    width: 200px;
+
+    margin-left: 510px;
+
+  }
+
+
+  .line3 {
+
+    border-top: 1px dashed red;
+
+    width: 200px;
+
+    margin-left: 310px;
+
+  }
+
+
+  .line4 {
+
+    border-top: 1px dashed red;
+
+    width: 200px;
+
+    margin-left: 510px;
+
+  }
+
+
+  #container .timelineLeft {
+
+    margin-left: 150px;
+
+    margin-top: 50px;
+
+  }
+
+
+  #container .timelineRight {
+
+    z-index: 2;
+
+    margin-left: 700px;
+
+  }
+
+
+  .descpLeft {
+
+    margin-left: 90px;
+
+  }
+
+
+  .descpRight {
+
+    margin-left: 600px;
+
+  }
+
+
+  .margin-test2 {
+
+    margin-top: 150px;
+
+  }
+
+
+  #ThreeCircles {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-left: 200px;
+
+    padding-right: 200px;
+
+    padding-bottom: 50px;
+
+  }
+
+
+  #ThreeCircles div {
+
+    padding: 25px;
+
+    border: 2px solid;
+
+    border-color: black;
+
+    border-radius: 50%;
+
+    height: 150px;
+
+    width: 150px;
+
+    text-align: center;
+
+  }
+
+
+
+/* Styles for hero section */
+
+
+
+
 
 // Dot navigation styles
 .dot-container {
@@ -320,6 +449,6 @@ ul.slick-dots {
 }
 
 
-.custom-card-style > div{
+.custom-card-style>div {
   background-color: yellow;
 }
