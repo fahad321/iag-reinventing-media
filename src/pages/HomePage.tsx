@@ -33,8 +33,12 @@ const HomePage: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <Header />
-      <div id="heroBanner"><HeroBanner /></div>
+      <HeroBanner
+        videoSrc="/assets/videos/nrma_insurance_cricket_covers.mp4"
+        title="Welcome to IAG Media"
+        subtitle="Delivering distinctive media solutions that drive creative excellence"
+        textPosition="center"
+      />
       <div id="parallax"><ParallaxSection /></div>
       <TextContent />
       <Carousel />
@@ -56,7 +60,7 @@ const HomePage: React.FC = () => {
           <p>This is a small card with custom content.</p>
         </Card>
       </div>
-      
+
       tsx
       <Video
         title="Our Vision"
@@ -64,7 +68,6 @@ const HomePage: React.FC = () => {
       />
       <SlideExample />
       <CarouselImages images={imageSlides} defaultCenterImage={0} />
-      <Footer />
     </motion.div>
   );
 };
