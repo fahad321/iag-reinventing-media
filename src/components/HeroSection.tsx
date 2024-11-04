@@ -160,16 +160,18 @@ const HeroSection: React.FC = () => {
         <ImageText
         imageUrl="/assets/images/AnnualPortfolioPlanning.png"
         altText="Annual portfolio Planning"
-        text="In under 3 months we collaborated with IAG’s marketing and in house media team to build a robust annual media approach for their entire portfolio. 
-        This not only helped prioritise and focus their approach to market, but it spotlighted critical gaps and untapped opportunities – from brand partnerships, digital maturity, media innovation and, most importantly, quantifying marketing’s impact on growth."
+        title="Annual Portfolio Planning"
+        text={["In under 3 months we collaborated with IAG’s marketing and in house media team to build a robust annual media approach for their entire portfolio.",
+        "This not only helped prioritise and focus their approach to market, but it spotlighted critical gaps and untapped opportunities – from brand partnerships, digital maturity, media innovation and, most importantly, quantifying marketing’s impact on growth."]}
         layout="left"
       />
 
       <ImageText
         imageUrl="assets/images/FullFunnelAnalytics.png"
         altText="Full Funnel Analytics"
-        text="To enable better attribution of marketing performance and forecast investment required for future growth, we built a custom full-funnel modelling suite. Unlike MMM that tends to carry a short-term bias, full funnel modelling helps quantify and calibrate the optimal investment mix across each stage of the funnel.
-        It also helps quantify the impact of any bottlenecks in the funnel to help strategic task prioritisation. Four independent models were built to cater to NRMA Insurance’s live markets (NSW and QLD) and insurance books (Home and Motor) with a roadmap to expand in line with the brand’s national rollout."
+        title=""
+        text={["To enable better attribution of marketing performance and forecast investment required for future growth, we built a custom full-funnel modelling suite. Unlike MMM that tends to carry a short-term bias, full funnel modelling helps quantify and calibrate the optimal investment mix across each stage of the funnel.",
+        "It also helps quantify the impact of any bottlenecks in the funnel to help strategic task prioritisation. Four independent models were built to cater to NRMA Insurance’s live markets (NSW and QLD) and insurance books (Home and Motor) with a roadmap to expand in line with the brand’s national rollout."]}
         layout="right"
       />
 
@@ -177,8 +179,9 @@ const HeroSection: React.FC = () => {
       <ImageText
         imageUrl="/assets/images/CaseforSpendBoardPres.png"
         altText="Case for Spend Board Presentations"
-        text="With the brand on the verge of entering new markets for the first time in their 100 year history, diversifying into new categories (single item, home loans) and launching entirely new insurance brands, IAG needed the right marketing investment to match their ambitious growth target.
-        Using our analytics as a foundation, we collaborated with IAG’s marketing team to build a successful case-for-spend, unlocking an incremental +$32M to invest in the portfolio’s growth."
+        title=""
+        text={["With the brand on the verge of entering new markets for the first time in their 100 year history, diversifying into new categories (single item, home loans) and launching entirely new insurance brands, IAG needed the right marketing investment to match their ambitious growth target.",
+        "Using our analytics as a foundation, we collaborated with IAG’s marketing team to build a successful case-for-spend, unlocking an incremental +$32M to invest in the portfolio’s growth."]}
         layout="left"
       />
 
@@ -222,21 +225,38 @@ const HeroSection: React.FC = () => {
         <ImageText
         imageUrl="assets/images/TheChallenge.png"
         altText="Full Funnel Analytics"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title=""
+        text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]}
         layout="right"
       />
 
 
       <ImageText
         imageUrl="/assets/images/TheMediaStrat.png"
-        altText="Case for Spend Board Presentations"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        altText="The Media Strategy"
+        title=""
+        text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]}
         layout="left"
       />
+
+      <ImageText
+        imageUrl="/assets/images/TheExecution.png"
+        altText="The Execution"
+        title=""
+        text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, qua."]}
+        layout="right"
+      />  
 
       </div>
     </motion.div>

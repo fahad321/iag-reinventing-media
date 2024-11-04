@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import HeroBanner from '../components/HeroBanner';
-import VideoSection from '../components/VideoSection';
+import Video from '../components/Video';
 import ParallaxSection from '../components/ParallaxSection';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
@@ -10,6 +10,20 @@ import CarouselImages from '../components/CarouselImages';
 import Card from '../components/Card';
 import ImageText from '../components/ImageText';
 import SlideExample from '../components/SlideExample';
+
+const imageSlides = [
+  {
+    id: 1,
+    src: '/assets/images/AFI_Plane.jpg',
+    alt: 'Image 1',
+  },
+  {
+    id: 2,
+    src: '/assets/images/AFI Ad bundle.png',
+    alt: 'Image 2',
+  },
+  // ... add more images as needed
+];
 
 const HomePage: React.FC = () => {
   return (
@@ -42,23 +56,14 @@ const HomePage: React.FC = () => {
           <p>This is a small card with custom content.</p>
         </Card>
       </div>
-      <ImageText
-        imageUrl="/assets/images/AFI_Plane.jpg"
-        altText="AFI Plane"
-        text="This is a sample text about the AFI Plane."
-        layout="left"
+      
+      tsx
+      <Video
+        title="Our Vision"
+        videoSrc="/assets/videos/nrma_insurance_cricket_covers.mp4"
       />
-      <ImageText
-        imageUrl="/assets/images/AFI Ad bundle.png"
-        altText="AFI Ad Bundle"
-        text="In under 3 months we collaborated with IAG’s marketing and in house media team to build a robust annual media approach for their entire portfolio. ​
-
-This not only helped prioritise and focus their approach to market, but it spotlighted critical gaps and untapped opportunities – from brand partnerships, digital maturity, media innovation and, most importantly, quantifying marketing’s impact on growth."
-        layout="right"
-      />
-      <VideoSection />
-      <SlideExample/>
-      <CarouselImages />
+      <SlideExample />
+      <CarouselImages images={imageSlides} defaultCenterImage={0} />
       <Footer />
     </motion.div>
   );

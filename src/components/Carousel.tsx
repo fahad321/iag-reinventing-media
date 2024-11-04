@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import HeroSection from './HeroSection';
-import OurBeliefSection from './OurBeliefSection';
-import BoldPromiseSection from './BoldPromiseSection';
+import PlanningExcellence from './PlanningExcellence';
+import InnovationMedia from './InnovationMedia';
 
 const sections = [
-    { id: 'hero', component: HeroSection, title: 'Hero Section' },
-    { id: 'belief', component: OurBeliefSection, title: 'Our Belief' },
-    { id: 'promise', component: BoldPromiseSection, title: 'Bold Promise' },
+    { id: 'planning', component: HeroSection, title: 'Complex Business' },
+    { id: 'planning', component: PlanningExcellence, title: 'Planning Excellence' },
+    { id: 'innovation', component: InnovationMedia, title: 'Innovation Media' },
 ];
 
 const Carousel: React.FC = () => {
