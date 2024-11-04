@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ImageText from '../components/ImageText';
 
 const HeroSection: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const HeroSection: React.FC = () => {
         >
           To achieve this we bulit a bespoked team powered by
         </motion.p>
+
         <motion.h1 
           className="text-5xl md:text-5xl font-bold mb-6"
           initial={{ y: 50, opacity: 0 }}
@@ -26,6 +28,7 @@ const HeroSection: React.FC = () => {
         >
           C-Suite Account Leadership.
         </motion.h1>
+
         <motion.p 
           className="text-l md:text-l mb-8 margin-test"
           initial={{ y: 50, opacity: 0 }}
@@ -35,14 +38,22 @@ const HeroSection: React.FC = () => {
           For the first six-months of our relationship, IAG received c-suite talent as they’re day-to-day team to ensure seamless transition, platinum tier product delivery and relationship access to make the impossible possible.
         </motion.p>
 
-        <div id="container">
-          <div className="portrait1"></div> 
-          <div className="portrait2"></div> 
-          <div className="portrait3"></div> 
-          <div className="portrait4"></div>  
+        <div id="container1">
+          <div>
+            <img src="assets/images/Portrait1.jpg"/>
+          </div>
+          <div>
+            <img src="assets/images/Portrait2.jpg"/>
+          </div> 
+          <div>
+            <img src="assets/images/Portrait3.jpg"/>
+          </div> 
+          <div>
+            <img src="assets/images/Portrait4.jpg"/>
+          </div> 
         </div>
 
-        <div id="container">
+        <div id="container1">
           <p>90% Initiative CEO<br></br>10% IAG Relationship Lead</p>
           <p>50% Initiative Managing Director<br></br>50% IAG Client Director</p>
           <p>50% Initiative CSO<br></br>50% IAG Strategy Director</p>
@@ -85,7 +96,9 @@ const HeroSection: React.FC = () => {
           <hr className="line4"></hr>
 
         <div id="container">
-          <div className="timelineLeft"></div> 
+          <div className="timelineLeft">
+            <img src="assets/images/Timeline_AFI.gif"/>
+          </div> 
         </div>
 
         <div id="container">
@@ -93,7 +106,9 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div id="container">
-          <div className="timelineRight"></div> 
+          <div className="timelineRight">
+            <img src="assets/images/Timeline_CarInsurance.jpg"/>
+          </div> 
         </div>
 
         <div id="container">
@@ -101,7 +116,9 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div id="container">
-          <div className="timelineLeft"></div> 
+          <div className="timelineLeft">
+            <img src="assets/images/Timeline_IMCProcess.png"/>
+          </div> 
         </div>
 
         <div id="container">
@@ -109,13 +126,16 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div id="container">
-          <div className="timelineRight"></div> 
+          <div className="timelineRight">
+            <img src="assets/images/Timeline_NRMA.jpg"/>
+          </div> 
         </div>
 
-        <div id="container">
-          <p className="descpRight">Tasked with launching a legacy brand <br></br> into brand new markets.</p>
+          <div id="container">
+            <p className="descpRight">Tasked with launching a legacy brand <br></br> into brand new markets.</p>
+          </div>
         </div>
-        </div>
+
         <motion.h1 
           className="text-5xl md:text-5xl font-bold mb-6 margin-test2"
           initial={{ y: 50, opacity: 0 }}
@@ -136,6 +156,87 @@ const HeroSection: React.FC = () => {
           <br></br>
           <br></br>…and a public announcement of record growth targets – public 1m customers.
         </motion.p>
+
+        <ImageText
+        imageUrl="/assets/images/AnnualPortfolioPlanning.png"
+        altText="Annual portfolio Planning"
+        text="In under 3 months we collaborated with IAG’s marketing and in house media team to build a robust annual media approach for their entire portfolio. 
+        This not only helped prioritise and focus their approach to market, but it spotlighted critical gaps and untapped opportunities – from brand partnerships, digital maturity, media innovation and, most importantly, quantifying marketing’s impact on growth."
+        layout="left"
+      />
+
+      <ImageText
+        imageUrl="assets/images/FullFunnelAnalytics.png"
+        altText="Full Funnel Analytics"
+        text="To enable better attribution of marketing performance and forecast investment required for future growth, we built a custom full-funnel modelling suite. Unlike MMM that tends to carry a short-term bias, full funnel modelling helps quantify and calibrate the optimal investment mix across each stage of the funnel.
+        It also helps quantify the impact of any bottlenecks in the funnel to help strategic task prioritisation. Four independent models were built to cater to NRMA Insurance’s live markets (NSW and QLD) and insurance books (Home and Motor) with a roadmap to expand in line with the brand’s national rollout."
+        layout="right"
+      />
+
+
+      <ImageText
+        imageUrl="/assets/images/CaseforSpendBoardPres.png"
+        altText="Case for Spend Board Presentations"
+        text="With the brand on the verge of entering new markets for the first time in their 100 year history, diversifying into new categories (single item, home loans) and launching entirely new insurance brands, IAG needed the right marketing investment to match their ambitious growth target.
+        Using our analytics as a foundation, we collaborated with IAG’s marketing team to build a successful case-for-spend, unlocking an incremental +$32M to invest in the portfolio’s growth."
+        layout="left"
+      />
+
+      <img src="assets/images/AFI_Plane.jpg" alt="AFI Plane"/>
+
+      <motion.p 
+          className="text-m md:text-m mb-8 margin-test"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+        >
+          Our first campaign was no small feat, in fact it was
+        </motion.p>
+
+        <motion.h1 
+          className="text-5xl md:text-5xl font-bold mb-6"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          The Most Complex Media Plan <br></br>
+          in Australia’s History.
+
+        </motion.h1>
+
+        <div id="ThreeCircles">
+          <div>
+            <h1>978</h1>
+            <p>ASSETS</p>
+          </div> 
+          <div>
+            <h1>57</h1>
+            <p>FORMATS</p>
+          </div> 
+          <div>
+            <h1>4X</h1>
+            <p>MEDIA FIRSTS</p>
+          </div> 
+        </div>
+
+        <ImageText
+        imageUrl="assets/images/TheChallenge.png"
+        altText="Full Funnel Analytics"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        layout="right"
+      />
+
+
+      <ImageText
+        imageUrl="/assets/images/TheMediaStrat.png"
+        altText="Case for Spend Board Presentations"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        layout="left"
+      />
 
       </div>
     </motion.div>
