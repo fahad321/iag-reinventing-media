@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
-import Header from '../components/Header';
 import HeroBanner from '../components/HeroBanner';
 import Video from '../components/Video';
 import ParallaxSection from '../components/ParallaxSection';
-import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import TextContent from '../components/TextContent';
 import CarouselImages from '../components/CarouselImages';

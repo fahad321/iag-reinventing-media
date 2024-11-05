@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import HeroSection from './HeroSection';
 import PlanningExcellence from './PlanningExcellence';
+import DataLed from './DataLed';
 import InnovationMedia from './InnovationMedia';
 
 const sections = [
     { id: 'planning', component: HeroSection, title: 'Complex Business' },
     { id: 'planning', component: PlanningExcellence, title: 'Planning Excellence' },
+    { id: 'data led', component: DataLed, title: 'Data Lead Geographics' },
     { id: 'innovation', component: InnovationMedia, title: 'Innovation Media' },
 ];
 
