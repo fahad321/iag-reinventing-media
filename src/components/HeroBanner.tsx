@@ -6,78 +6,82 @@ import { useInView } from 'react-intersection-observer';
 
 interface HeroBannerProps {
   videoSrc: string;
-  imageSrc?: string; // New prop for the image
   title: string;
   subtitle: string;
   textPosition: 'center' | 'left' | 'right';
+  imageSrc?: string; // Add this line
 }
 
-const HeroBanner: React.FC<HeroBannerProps> = ({ videoSrc, imageSrc, title, subtitle, textPosition }) => {
+const HeroBanner: React.FC<HeroBannerProps> = ({ videoSrc, title, subtitle, textPosition, imageSrc }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [showVideo, setShowVideo] = useState(false);
+  const [showImage, setShowImage] = useState(!!imageSrc);
   const [ref, inView] = useInView({
-    threshold: 1,
+    threshold: 0.5,
     triggerOnce: true,
   });
 
   useEffect(() => {
-    if (inView) {
-      setTimeout(() => {
-        setShowVideo(true);
-        if (videoRef.current) {
-          videoRef.current.play();
-        }
-      }, 500);
+    if (inView && videoRef.current && !showImage) {
+      videoRef.current.play();
     }
-  }, [inView]);
+  }, [inView, showImage]);
+
+  useEffect(() => {
+    if (imageSrc) {
+      const timer = setTimeout(() => {
+        setShowImage(false);
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [imageSrc]);
+
+  const getTextPositionClass = () => {
+    switch (textPosition) {
+      case 'left':
+        return 'items-start text-left pl-8';
+      case 'right':
+        return 'items-end text-right pr-8';
+      default:
+        return 'items-center text-center';
+    }
+  };
 
   return (
     <div className="relative h-screen">
-      {/* Image Background */}
-      <div className={`absolute inset-0 overflow-hidden ${showVideo ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500`}>
-        <img
-          className="w-full h-full object-cover"
-          src={imageSrc}
-          alt="Background"
-        />
-      </div>
-
       {/* Video Background */}
-      <div className={`absolute inset-0 overflow-hidden ${showVideo ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
-        <video
-          ref={videoRef}
-          className="w-full h-full object-cover"
-          src={videoSrc}
-          muted
-          loop
-          playsInline
-        />
+      <div className="absolute inset-0 overflow-hidden">
+        {showImage && imageSrc ? (
+          <img
+            src={imageSrc}
+            alt="Hero Banner"
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            className="w-full h-full object-cover"
+            src={videoSrc}
+            muted
+            loop
+            playsInline
+          />
+        )}
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
       </div>
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50" />
 
       {/* Content */}
       <motion.div
         ref={ref}
-        className={`relative z-10 h-full flex flex-col justify-center ${textPosition === 'left' ? 'items-start' :
-            textPosition === 'right' ? 'items-end' :
-              'items-center'
-          } text-white px-4`}
+        className={`relative z-10 h-full flex flex-col justify-center text-white px-4 ${getTextPositionClass()}`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className={`text-4xl md:text-6xl font-bold mb-6 ${textPosition === 'center' ? 'text-center' :
-            textPosition === 'left' ? 'text-left' :
-              'text-right'
-          }`}>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">
           {title}
         </h1>
-        <p className={`text-xl md:text-2xl max-w-2xl ${textPosition === 'center' ? 'text-center' :
-            textPosition === 'left' ? 'text-left' :
-              'text-right'
-          }`}>
+        <p className="text-xl md:text-2xl max-w-2xl">
           {subtitle}
         </p>
       </motion.div>

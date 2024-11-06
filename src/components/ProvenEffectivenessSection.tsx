@@ -58,13 +58,13 @@ const ProvenEffectivenessSection: React.FC = () => {
         <Layout cols="grid-cols-2" gap="gap-10">
           <div className="">
             <Video
-              videoSrc="/assets/videos/nrma_insurance_fifo_fields.mp4"
+              videoSrc="/assets/videos/nrma_insurance_fifo_fields_updated.mp4"
             />
             <p className="mt-4 text-center text-lg">Brent Smart Former IAG Chief Marketing Officer</p>
           </div>
           <div className="">
             <Video
-              videoSrc="/assets/videos/cgu_-_tall_poppy_-_billboard.mp4"
+              videoSrc="/assets/videos/cgu_-_tall_poppy_-_billboard_updated.mp4"
             />
             <p className="mt-4 text-center text-lg">Michelle Klein IAG Chief Customer & Marketing Officer</p>
           </div>
