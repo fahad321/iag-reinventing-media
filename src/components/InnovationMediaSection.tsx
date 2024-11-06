@@ -46,7 +46,7 @@ const InnovativeMediaSection: React.FC = () => {
     return (
         <div className="innovative-media-section">
             {/* Full size image with text overlay */}
-            <div className="relative h-screen">
+            <div className="relative h-screen my-40">
                 <img src="/assets/images/Picture 1.png" alt="Innovative Media" className="w-full h-full object-cover" />
                 <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center p-8">
                     <motion.h2

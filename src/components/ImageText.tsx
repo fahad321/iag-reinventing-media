@@ -1,4 +1,7 @@
+// src/components/ImageText.tsx
 import React from 'react';
+import { motion } from 'framer-motion';
+import { Parallax } from 'react-scroll-parallax';
 
 interface ImageTextProps {
   imageUrl: string;
@@ -20,14 +23,36 @@ const ImageText: React.FC<ImageTextProps> = ({ imageUrl, altText, title, text, l
   const textClasses = 'w-1/2 p-6 flex flex-col justify-center';
 
   return (
-    <div className={`${containerClasses[layout]}  my-8`}>
-      <img src={imageUrl} alt={altText} className={imageClasses} />
-      <div className={textClasses}>
+    <div className='my-40'>
+    <Parallax className={`${containerClasses[layout]} my-8`} speed={-10}>
+      <motion.img 
+        src={imageUrl} 
+        alt={altText} 
+        className={imageClasses}
+        initial={{ opacity: 0, x: layout === 'left' ? -50 : 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      />
+      <motion.div 
+        className={textClasses}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
         {title && <h2 className="text-2xl font-bold mb-4">{title}</h2>}
         {text.map((paragraph, index) => (
-          <p key={index} className="text-wt mb-4">{paragraph}</p>
+          <motion.p 
+            key={index} 
+            className="text-wt mb-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+          >
+            {paragraph}
+          </motion.p>
         ))}
-      </div>
+      </motion.div>
+    </Parallax>
     </div>
   );
 };

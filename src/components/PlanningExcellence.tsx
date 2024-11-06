@@ -19,7 +19,7 @@ const PlanningExcellence: React.FC = () => {
           to deliver compounded effectiveness.
         </p> */}
         
-        <img className='hero-section--banner-image' src="assets/images/AFI_Plane.jpg" alt="AFI Plane"/>
+        <img className='hero-section--banner-image my-16' src="assets/images/AFI_Plane.jpg" alt="AFI Plane"/>
 
       <motion.p 
           className="text-m md:text-m mb-8 margin-test"

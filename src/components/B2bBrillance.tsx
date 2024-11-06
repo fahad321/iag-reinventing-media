@@ -85,13 +85,14 @@ const B2bBrillance: React.FC = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-
+<div className='my-40'>
         <HeroBanner
         videoSrc="/assets/videos/cgu_-_tall_poppy_-_billboard_updated.mp4"
-        title="Big Brand Thinking, in B2B Marketing"
+        title="Big Brand Thinking, in B2B Marketing"
         subtitle="B2B marketing is famously functional, hyper-precise and filled with industry jargon. Backed by IPA research that indicated the conventions of effective B2C communications apply to B2B, we set out to prove this by bringing the most creatively ambitious B2B campaign Australia has seen to market."
         textPosition="left"
       />
+
         
         <ImageText
         imageUrl="/assets/images/B2B_TheChallenge.png"
@@ -155,6 +156,7 @@ const B2bBrillance: React.FC = () => {
         <div className="spacer1"></div>
         <div className="spacer2"></div>
         <div className="spacer3"></div>
+      </div>
       </div>
 
       </motion.div>

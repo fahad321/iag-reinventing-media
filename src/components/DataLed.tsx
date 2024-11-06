@@ -19,13 +19,14 @@ const DataLed: React.FC = () => {
           We believe in the power of harmonizing creative ideas with creative media
           to deliver compounded effectiveness.
         </p> */}
-        
+        <div className='my-40'>
         <HeroBanner
         videoSrc="/assets/videos/nrma_insurance_fifo_fields_updated.mp4"
         title="Expanding NRMA Across Australia."
         subtitle="2021 represented a milestone in NRMA Insurances’ 100 year history as they finally expanded the business into Western and South Australia to become a truly national brand.         "
         textPosition="left"
       />
+      </div>
 
         <ImageText
         imageUrl="assets/images/Aus_Map.png"
