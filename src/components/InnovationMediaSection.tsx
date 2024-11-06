@@ -156,7 +156,7 @@ const InnovativeMediaSection: React.FC = () => {
 
 
                     <Video
-                        videoSrc="/assets/videos/nrma_insurance_cricket_covers.mp4"
+                        videoSrc="/assets/videos/nrma_insurance_cricket_covers (1080p).mp4"
                     />
                 </motion.div>
             </Parallax>
