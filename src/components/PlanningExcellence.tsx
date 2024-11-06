@@ -60,8 +60,8 @@ const PlanningExcellence: React.FC = () => {
         imageUrl="assets/images/TheChallenge.png"
         altText="The Challenge"
         title="The Challenge"
-        text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]}
+        text={["As staunch advocates of Climate Change action, NRMA Insurance partnered with Hollywood calibre production company to make a compelling documentary showcasing Australia’s response to the Black Summer bushfires.",
+        "Our job was to get as many Australians to see the film and take positive climate actions and recruit volunteers for a newly formed NFP The Australian Resilience Corps to arm the country with the help they need to insulate themselves against future risk."]}
         layout="right"
       />
 
@@ -70,8 +70,8 @@ const PlanningExcellence: React.FC = () => {
         imageUrl="/assets/images/TheMediaStrat.png"
         altText="The Media Strategy"
         title="The Media Strategy"
-        text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]}
+        text={["Whilst this was funded by a national insurer, our first provocation is we cannot act like an insurance company. If Aussie’s saw this as marketing its impact would be diluted. So we set out to act like a film distributer, with an a-list sponsor.",
+        "This approach guided every element of our plan, from goal setting, audience segmentation, brokering a national premiere on prime-time TV, orchestrated an omnipresent cross platform promotional blitz and even down to individual sequential ooh site selection to ensure ‘where there’s A Fire Inside, there’s NRMA Insurance’."]}
         layout="left"
       />
 

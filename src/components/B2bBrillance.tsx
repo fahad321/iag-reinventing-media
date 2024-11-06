@@ -106,7 +106,7 @@ const B2bBrillance: React.FC = () => {
         <ImageText
         imageUrl="/assets/images/B2B_TheMediaStrat.png"
         altText="The Media Strategy"
-        title="The Medis Strategy"
+        title="The Media Strategy"
         text={["We inherited a 5minute cinematic film made in partnership with Jim Henson Studios. ‘Tall Poppy’ was a powerful story showing the fragility of ambition and how important it is to insure it.",
         "It also showed the meaningful role brokers play in that endeavour.",
         "Our strategy was to personify Poppy in culture via ambitious public media to drive Aussie businesses to their broker and bring ‘Big-Poppy Energy’ in broker trade channels to cement our commitment to their industry…reinventing the B2B playbook in the process."]}
