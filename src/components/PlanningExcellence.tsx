@@ -58,8 +58,8 @@ const PlanningExcellence: React.FC = () => {
 
         <ImageText
         imageUrl="assets/images/TheChallenge.png"
-        altText="Full Funnel Analytics"
-        title=""
+        altText="The Challenge"
+        title="The Challenge"
         text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]}
         layout="right"
@@ -69,7 +69,7 @@ const PlanningExcellence: React.FC = () => {
       <ImageText
         imageUrl="/assets/images/TheMediaStrat.png"
         altText="The Media Strategy"
-        title=""
+        title="The Media Strategy"
         text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]}
         layout="left"
@@ -78,7 +78,7 @@ const PlanningExcellence: React.FC = () => {
       <ImageText
         imageUrl="/assets/images/TheExecution.png"
         altText="The Execution"
-        title=""
+        title="The Execution"
         text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.",
 
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

@@ -1,0 +1,86 @@
+// Styles for B2B Brillance Section
+
+.container {
+    position: relative;
+    color: white;
+  }
+
+  .text-container{
+    display: flex;
+    flex-direction: row;
+  }
+  
+.top-left{
+  position: absolute;
+  top: 20px;
+  left: 80px;
+}
+
+.first-col{
+    position: absolute;
+    top: 80px;
+    left: 10%;
+}
+
+.second-col{
+    position: absolute;
+    top: 80px;
+    left: 35%;
+}
+
+.third-col{
+    position: absolute;
+    top: 80px;
+    left: 55%;
+}
+
+.fourth-col{
+    position: absolute;
+    top: 80px;
+    left: 75%;
+}
+
+.spacer1 {
+
+    border-left: 2px dotted white;
+
+    height: 130px;
+
+    position: absolute;
+
+    left: 33%;
+    top:15%;
+
+    z-index: 2;
+
+}
+
+.spacer2 {
+
+    border-left: 2px dotted white;
+
+    height: 130px;
+
+    position: absolute;
+
+    left: 54%;
+    top: 15%;
+
+    z-index: 2;
+
+}
+
+.spacer3 {
+
+    border-left: 2px dotted white;
+
+    height: 130px;
+
+    position: absolute;
+
+    left: 74%;
+    top: 15%;
+
+    z-index: 2;
+
+}

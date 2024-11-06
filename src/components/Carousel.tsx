@@ -6,14 +6,16 @@ import DataLed from './DataLed';
 import InnovationMediaSection from './InnovationMediaSection';
 import InHouseSection from './InHouseSection';
 import ProvenEffectivenessSection from './ProvenEffectivenessSection';
+import B2bBrillance from './B2bBrillance';
 
 const sections = [
     { id: 'herosection', component: HeroSection, title: 'Complex Business' },
     { id: 'planning', component: PlanningExcellence, title: 'Planning Excellence' },
     { id: 'data led', component: DataLed, title: 'Data Lead Geographics' },
     { id: 'innovation', component: InnovationMediaSection, title: 'Innovation Media' },
+    { id: 'brillance', component: B2bBrillance, title: 'B2B Brillance' },
     { id: 'inhouse', component: InHouseSection, title: 'In-House Collaboration' },
-    { id: 'proveneffectiveness', component: ProvenEffectivenessSection, title: 'Proven Effectiveness' }
+    { id: 'proveneffectiveness', component: ProvenEffectivenessSection, title: 'Proven Effectiveness' },
 ];
 
 const Carousel: React.FC = () => {

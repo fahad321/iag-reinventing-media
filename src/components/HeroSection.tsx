@@ -90,13 +90,11 @@ const HeroSection: React.FC = () => {
 
         <div className="timeline">
           <div className="vl"></div>
-          <hr className="line1"></hr>
-          <hr className="line2"></hr>
-          <hr className="line3"></hr>
-          <hr className="line4"></hr>
 
         <div id="container">
           <div className="timelineLeft">
+            <p className="four-weeks">4<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <hr className="line1"></hr>
             <img src="assets/images/Timeline_AFI.gif"/>
           </div> 
         </div>
@@ -107,6 +105,8 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineRight">
+            <p className="three-weeks">3<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <hr className="line2"></hr>
             <img src="assets/images/Timeline_CarInsurance.jpg"/>
           </div> 
         </div>
@@ -117,6 +117,8 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineLeft">
+            <p className="two-weeks">2<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <hr className="line3"></hr>
             <img src="assets/images/Timeline_IMCProcess.png"/>
           </div> 
         </div>
@@ -127,6 +129,8 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineRight">
+            <p className="one-week">1<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <hr className="line4"></hr>
             <img src="assets/images/Timeline_NRMA.jpg"/>
           </div> 
         </div>
@@ -169,7 +173,7 @@ const HeroSection: React.FC = () => {
       <ImageText
         imageUrl="assets/images/FullFunnelAnalytics.png"
         altText="Full Funnel Analytics"
-        title=""
+        title="Full Funnel Analytics"
         text={["To enable better attribution of marketing performance and forecast investment required for future growth, we built a custom full-funnel modelling suite. Unlike MMM that tends to carry a short-term bias, full funnel modelling helps quantify and calibrate the optimal investment mix across each stage of the funnel.",
         "It also helps quantify the impact of any bottlenecks in the funnel to help strategic task prioritisation. Four independent models were built to cater to NRMA Insurance’s live markets (NSW and QLD) and insurance books (Home and Motor) with a roadmap to expand in line with the brand’s national rollout."]}
         layout="right"
@@ -179,7 +183,7 @@ const HeroSection: React.FC = () => {
       <ImageText
         imageUrl="/assets/images/CaseforSpendBoardPres.png"
         altText="Case for Spend Board Presentations"
-        title=""
+        title="Case for Spend Board Presentations"
         text={["With the brand on the verge of entering new markets for the first time in their 100 year history, diversifying into new categories (single item, home loans) and launching entirely new insurance brands, IAG needed the right marketing investment to match their ambitious growth target.",
         "Using our analytics as a foundation, we collaborated with IAG’s marketing team to build a successful case-for-spend, unlocking an incremental +$32M to invest in the portfolio’s growth."]}
         layout="left"

@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Parallax } from 'react-scroll-parallax';
 import ImageText from './ImageText';
 import HeroBanner from './HeroBanner';
-import Video from '../components/Video';
 
 const DataLed: React.FC = () => {
   return (
@@ -22,7 +21,7 @@ const DataLed: React.FC = () => {
         </p> */}
         
         <HeroBanner
-        videoSrc="/assets/videos/nrma_insurance_fifo_fields.mp4"
+        videoSrc="/assets/videos/nrma_insurance_fifo_fields_updated.mp4"
         title="Expanding NRMA Across Australia."
         subtitle="2021 represented a milestone in NRMA Insurances’ 100 year history as they finally expanded the business into Western and South Australia to become a truly national brand.         "
         textPosition="left"
@@ -72,6 +71,20 @@ const DataLed: React.FC = () => {
         text={["As NRMA Insurance’s founding market, NSW represents a strong-hold for the brand. However with a constant influx of emerging competitors and rising category investment means they cannot afford to take for granted.",
         "To reinforce their leadership position and instil confidence in NRMA Insurance above all competitors we built a campaign that socially norms the brand and showcases depth of expertise. This didn’t just reverse declines but drove the brand back into growth."]}
         layout="right"
+      />
+
+        <ImageText
+        imageUrl="assets/images/combined1.png"
+        altText="Queensland Rollout"
+        title="Queensland"
+        text={["Despite being in Queensland for 27 years, and years of enacting textbook growth strategies (eSOV, heavy promotions, and even sponsoring the Broncos) NRMA Insurance is still seen as the ‘outside’ insurance brand with growth stagnant for decades.",
+        "Understanding Queenslanders are fiercely pragmatic people, we set out to not just claim help but prove it. Using cultural analytics  we identified the #1 priority Queenslanders wanted help with; fixing the notorious Bruce Highway. Widely recognised in ‘world’s worst roads’ lists and responsible for thousands of incidents and deaths, Queenslanders needed an ally to get the government to take action.",
+        "So we partnered with NewsCorp to launch a joint advocacy blitz calling for the Government to ‘Help our Highway’. A state-wide mission, activated with hyper-local relevance, this call to arms was unmissable – every masthead, every news site, every social feed was filled to drive the attention and action required. And to date it’s all working, for Queenslanders and the NRMA Insurance brand.",
+        "Two Weeks post campaign the government released vital crash statistics; despite over two decades of petitioning prior.",
+        "Half-a-Billion investment committed from Fed and state Govs.",
+        "Increase in ”brand that cares about local communities.”",
+        "Consideration (after decades of flatlined figures, and the highest ever non-customer consideration in Queensland)."]}
+        layout="left"
       />
       
       </motion.div>

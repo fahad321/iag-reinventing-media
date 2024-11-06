@@ -55,7 +55,7 @@
 
 .vl {
 
-    border-left: 6px solid green;
+    border-left: 6px solid white;
 
     height: 1100px;
 
@@ -72,44 +72,103 @@
 
 .line1 {
 
-    border-top: 1px dashed red;
+    position: absolute;
+
+    border-top: 1px dashed white;
 
     width: 200px;
 
-    margin-left: 310px;
+    margin-left: 11%;
+    
+    margin-top: 5%;
 
 }
 
+.four-weeks{
+
+    position: absolute;
+
+    text-align: right;
+
+    margin-left: -8%;
+
+    margin-top: 2%;
+}
+
+.three-weeks{
+
+    position: absolute;
+
+    text-align: left;
+
+    margin-left: 11%;
+
+    margin-top: 2%;
+}
+
+.two-weeks{
+
+    position: absolute;
+
+    text-align: right;
+
+    margin-left: -8%;
+
+    margin-top: 2%;
+}
+
+.one-week{
+
+    position: absolute;
+
+    text-align: left;
+
+    margin-left: 11%;
+
+    margin-top: 2%;
+}
 
 .line2 {
 
-    border-top: 1px dashed red;
+    position: absolute;
+
+    border-top: 1px dashed white;
 
     width: 200px;
 
-    margin-left: 510px;
+    margin-left: -15%;
+
+    margin-top: 5%;
 
 }
 
 
 .line3 {
 
-    border-top: 1px dashed red;
+    position: absolute;
+
+    border-top: 1px dashed white;
 
     width: 200px;
 
-    margin-left: 310px;
+    margin-left: 11%;
+
+    margin-top: 5%;
 
 }
 
 
 .line4 {
 
-    border-top: 1px dashed red;
+    position: absolute;
+
+    border-top: 1px dashed white;
 
     width: 200px;
 
-    margin-left: 510px;
+    margin-left: -15%;
+
+    margin-top: 5%;
 
 }
 
@@ -118,7 +177,7 @@
 
     margin-left: 150px;
 
-    margin-top: 50px;
+     margin-top: 3%;
 
 }
 
@@ -127,7 +186,7 @@
 
     z-index: 2;
 
-    margin-left: 700px;
+    margin-left: 72%;
 
 }
 
@@ -141,7 +200,7 @@
 
 .descpRight {
 
-    margin-left: 600px;
+    margin-left: 63%;
 
 }
 
