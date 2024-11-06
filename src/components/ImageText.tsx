@@ -20,7 +20,7 @@ const ImageText: React.FC<ImageTextProps> = ({ imageUrl, altText, title, text, l
   const textClasses = 'w-1/2 p-6 flex flex-col justify-center';
 
   return (
-    <div className={`${containerClasses[layout]} overflow-hidden`}>
+    <div className={`${containerClasses[layout]}  my-8`}>
       <img src={imageUrl} alt={altText} className={imageClasses} />
       <div className={textClasses}>
         {title && <h2 className="text-2xl font-bold mb-4">{title}</h2>}

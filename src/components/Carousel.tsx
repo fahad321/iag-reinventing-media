@@ -3,13 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import HeroSection from './HeroSection';
 import PlanningExcellence from './PlanningExcellence';
 import DataLed from './DataLed';
-import InnovationMedia from './InnovationMedia';
+import InnovationMediaSection from './InnovationMediaSection';
+import InHouseSection from './InHouseSection';
+import ProvenEffectivenessSection from './ProvenEffectivenessSection';
 
 const sections = [
-    { id: 'planning', component: HeroSection, title: 'Complex Business' },
+    { id: 'herosection', component: HeroSection, title: 'Complex Business' },
     { id: 'planning', component: PlanningExcellence, title: 'Planning Excellence' },
     { id: 'data led', component: DataLed, title: 'Data Lead Geographics' },
-    { id: 'innovation', component: InnovationMedia, title: 'Innovation Media' },
+    { id: 'innovation', component: InnovationMediaSection, title: 'Innovation Media' },
+    { id: 'inhouse', component: InHouseSection, title: 'In-House Collaboration' },
+    { id: 'proveneffectiveness', component: ProvenEffectivenessSection, title: 'Proven Effectiveness' }
 ];
 
 const Carousel: React.FC = () => {

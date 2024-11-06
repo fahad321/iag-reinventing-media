@@ -14,11 +14,19 @@ const TextContent: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white py-20 px-4 md:px-8">
+    <div className="min-h-screen bg-gray-900 text-white py-20 px-4 md:px-8 text-center">
       <div className="max-w-4xl mx-auto">
+      <motion.p 
+          className="mt-2"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Our relationship began with a bold promise.
+        </motion.p>
         {/* Main Heading */}
         <motion.h1 
-          className="text-4xl md:text-6xl font-bold mb-12 leading-tight mt-44"
+          className="text-4xl md:text-6xl font-bold mb-12 leading-tight mt-8"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

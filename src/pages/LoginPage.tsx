@@ -16,9 +16,12 @@ const LoginPage: React.FC = () => {
   };
 
   return (
+    <>
+    <h3 className="text-2xl mb-4 text-center">For best experience please view on Desktop.</h3>
+        
     <div className="flex h-screen justify-center items-center bg-accenturePrimary text-white login-page">
       <form className="bg-gray-800 p-6 rounded-lg" onSubmit={handleLogin}>
-        <h1 className="text-2xl mb-4">Login</h1>
+        <h1 className="text-2xl mb-4">Accenture Song</h1>
         <input
           type="text"
           placeholder="Username"
@@ -38,6 +41,7 @@ const LoginPage: React.FC = () => {
         </button>
       </form>
     </div>
+        </>
   );
 };
 
