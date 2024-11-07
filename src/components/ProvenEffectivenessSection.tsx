@@ -18,7 +18,7 @@ const ProvenEffectivenessSection: React.FC = () => {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#A800FF]">
-          Reinventing Media<br></br>Drives Business Growth
+          Reinventing Media<br></br>Drives Business Growth.
         </h2>
 
         <p className="text-lg text-center mb-4">

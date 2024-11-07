@@ -11,8 +11,8 @@ import B2bBrillance from './B2bBrillance';
 const sections = [
     { id: 'herosection', component: HeroSection, title: 'Complex Business' },
     { id: 'planning', component: PlanningExcellence, title: 'Planning Excellence' },
-    { id: 'data led', component: DataLed, title: 'Data Lead Geographics' },
-    { id: 'innovation', component: InnovationMediaSection, title: 'Innovation Media' },
+    { id: 'data led', component: DataLed, title: 'Data-Led Geographics' },
+    { id: 'innovation', component: InnovationMediaSection, title: 'Innovation in Media' },
     { id: 'brillance', component: B2bBrillance, title: 'B2B Brillance' },
     { id: 'inhouse', component: InHouseSection, title: 'In-House Collaboration' },
     { id: 'proveneffectiveness', component: ProvenEffectivenessSection, title: 'Proven Effectiveness' },

@@ -78,8 +78,8 @@ const DataLed: React.FC = () => {
         "So, we partnered with NewsCorp to launch a joint advocacy blitz calling for the Government to ‘Help our Highway’. A state-wide mission, activated with hyper-local relevance, this call to arms was unmissable – every masthead, every news site, every social feed was filled to drive the attention and action required. And to date it’s all working, for Queenslanders and the NRMA Insurance brand.",
         "Two Weeks post campaign the government released vital crash statistics; despite over two decades of petitioning prior.",
         "Half-a-Billion investment committed from Fed and state Govs.",
-        "Increase in ”brand that cares about local communities.”",
-        "Consideration (after decades of flatlined figures, and the highest ever non-customer consideration in Queensland)."]}
+        "+8ppt Increase in ”brand that cares about local communities.”",
+        "+3ppt Consideration (after decades of flatlined figures, and the highest ever non-customer consideration in Queensland)."]}
         layout="left"
       />
       

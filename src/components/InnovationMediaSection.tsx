@@ -118,7 +118,7 @@ const InnovativeMediaSection: React.FC = () => {
                 <img src="/assets/images/Picture 1.png" alt="Innovative Media" className="w-full h-full object-cover" />
                 <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center p-8">
                     <motion.h2
-                        className="text-4xl text-white font-bold text-center max-w-3xl"
+                        className="text-4xl text-[#A800FF] font-bold text-center max-w-3xl"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}

@@ -153,7 +153,7 @@ const PlanningExcellence: React.FC = () => {
             <p>FORMATS</p>
           </div> 
           <div>
-            <h1>4X</h1>
+            <h1>4x</h1>
             <p>MEDIA FIRSTS</p>
           </div> 
         </div>
@@ -189,12 +189,12 @@ const PlanningExcellence: React.FC = () => {
       />  
 
       {/* Carousel Image component */}
-      <CarouselImages images={imageSlides} defaultCenterImage={3} />
+      <CarouselImages images={imageSlides} defaultCenterImage={9} />
 
       <Video
         videoSrc="/assets/videos/nrma_insurance._a_fire_inside (1080p).mp4"
       />
-    <div className="py-20">
+    <div className="mx-40 py-20">
       <Layout cols="grid-cols-4" gap="gap-4">
           <TextBlock
             title='+12M'

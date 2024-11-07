@@ -75,16 +75,6 @@ const TextContent: React.FC = () => {
           …and we immediately delivered….
         </motion.p>
 
-        {/* Bold Promise */}
-        <motion.p
-          className="text-xl md:text-2xl mb-16 text-gray-300"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
-          Our relationship began with a bold promise.
-        </motion.p>
-
         {/* Awards Section */}
         {/* Awards Section */}
         <motion.div
