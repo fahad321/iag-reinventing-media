@@ -52,9 +52,11 @@ const TextContent: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          With a marketing team famous for fame-driving creative work, we set out to match their
-          ambition with a promise to deliver equally effective fame-driving media thinking or a
-          percentage of our remuneration was at risk.
+          With a marketing team famous for 
+          fame-driving creative work, we set out to 
+          match their ambition with a promise to create 
+          equally effective, fame-driving media thinking or a percentage 
+          of our remuneration was at risk.
         </motion.p>
 
         {/* Delivery Statement */}

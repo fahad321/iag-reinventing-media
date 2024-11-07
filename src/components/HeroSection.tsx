@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          For the first six-months of our relationship, IAG received c-suite talent as they’re day-to-day team to ensure seamless transition, platinum tier product delivery and relationship access to make the impossible possible.
+          For the first six-months of our relationship, IAG received C-suite talent as their day-to-day team to ensure seamless transition, platinum-tier product delivery and relationship access, to make the impossible, possible.
         </motion.p>
 
         <div id="container1">
@@ -54,10 +54,10 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div id="container1">
-          <p>90% Initiative CEO<br></br>10% IAG Relationship Lead</p>
-          <p>50% Initiative Managing Director<br></br>50% IAG Client Director</p>
-          <p>50% Initiative CSO<br></br>50% IAG Strategy Director</p>
-          <p>70% Initiative COO<br></br>30% IAG Transition Lead</p>
+          <p className="text-[#A800FF]">90% Initiative CEO<br></br>10% IAG Relationship Lead</p>
+          <p className="text-[#A800FF]">50% Initiative Managing Director<br></br>50% IAG Client Director</p>
+          <p className="text-[#A800FF]">50% Initiative CSO<br></br>50% IAG Strategy Director</p>
+          <p className="text-[#A800FF]">70% Initiative COO<br></br>30% IAG Transition Lead</p>
         </div>
 
 
@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          This was a critical solution for IAG as they were embarking on the most transformative year in the brand’s history. From expanding into new markets, launching entirely new insurance brands to delivering their most creatively ambitious work to date they needed a capable media partner.
+          This was a critical solution for IAG as they were embarking on the most transformative year in the brand’s history. From expanding into new markets, launching entirely new insurance brands to delivering their most creatively ambitious work to date, they needed an ambitious and capable media partner.
         </motion.p>
 
         <motion.h1 
@@ -112,7 +112,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div id="container">
-          <p className="descpRight">Joined a taskforce responsible <br></br>for building a new youth <br></br>insurance brand (to launch in &gt; 6 months).</p>
+          <p className="descpRight">Joined a taskforce responsible <br></br>for building a new youth <br></br>insurance brand (to launch in &lt;6 months).</p>
         </div>
 
         <div id="container">
@@ -156,17 +156,19 @@ const HeroSection: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          No annual plan, no consistent communications planning architecture, no integrated marketing process, non-competitive investment, no single source of effectiveness, entering new markets for the first time in 100 years
-          <br></br>
-          <br></br>…and a public announcement of record growth targets – public 1m customers.
+        No annual media strategy, no consistent communications planning architecture, no integrated marketing process, no single source of effectiveness, and uncompetitive marketing investment.
+        <br></br>
+        <br></br>
+        For IAG to achieve newly announced record growth targets they required rapid restructuring of their planning.
+
         </motion.p>
 
         <ImageText
         imageUrl="/assets/images/AnnualPortfolioPlanning.png"
         altText="Annual portfolio Planning"
         title="Annual Portfolio Planning"
-        text={["In under 3 months we collaborated with IAG’s marketing and in house media team to build a robust annual media approach for their entire portfolio.",
-        "This not only helped prioritise and focus their approach to market, but it spotlighted critical gaps and untapped opportunities – from brand partnerships, digital maturity, media innovation and, most importantly, quantifying marketing’s impact on growth."]}
+        text={["In under 3 months we collaborated with IAG’s marketing and in-house media team to build a robust annual media approach for their entire portfolio.",
+        "This not only helped prioritise and focus their approach to market, but it spotlighted critical gaps and untapped opportunities – from brand partnerships, digital maturity, media innovation and, most importantly, quantifying marketing’s impact on business growth."]}
         layout="left"
       />
 

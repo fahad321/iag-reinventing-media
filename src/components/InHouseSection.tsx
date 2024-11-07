@@ -16,7 +16,7 @@ const InHouseSection: React.FC = () => {
     const optimizationPoints: OptimizationPoint[] = [
         {
             title: "Account Leadership Transition",
-            content: "As mentioned, we provided c-suite account leadership for first six months of the contract. Whilst highly beneficial, this created an 'end point' where the volume of visibility switched to day-to-day team. This switch required an adjustment period, to avoid this in the future we plan to hire Group Account Directors earlier in the process and co-pilot leadership to keep momentum post transition."
+            content: "As mentioned, we provided c-suite account leadership for first six months of the contract. Whilst highly beneficial, this created an ‘end point’ where the volume of visibility switched to day-to-day team. This switch required an adjustment period, to avoid this in the future we plan to hire Group Account Directors earlier in the process and co-pilot leadership to maintain momentum post transition."
         },
         {
             title: "Cloud-Based Collaboration",
@@ -28,7 +28,7 @@ const InHouseSection: React.FC = () => {
         },
         {
             title: "Expand Beyond Marketing",
-            content: "Finally, whilst we established deep working relationship with the in-house performance team and broader marketing unit (e.g. customer analytics) our opportunity to impact the broader business was limited. Over time we built enough trust to be invited into NPD projects and business growth forums, but it wasn't until 2023/4 where exposure to the broader business became standard…with the appointment of Accenture Song as end-to-end experience leads."
+            content: "Finally, whilst we established deep working relationship with the in-house performance team and broader marketing unit (e.g. customer analytics) our opportunity to impact the broader business was limited. Over time we built enough trust to be invited into NPD projects and business growth forums, but it wasn’t until 2023/4 where exposure to the broader business became standard… with the appointment of Accenture Song as end-to-end experience leads."
         }
     ];
     return (
@@ -63,10 +63,12 @@ const InHouseSection: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            Working in a hybrid structure with an in-house media and production teams
-                            is fast becoming the operational norm in modern business. Our relationship
-                            with IAG's client side media team represents best practice to get the most
-                            out of collective efforts with the least amount of inefficiencies.
+                            Working in a hybrid structure with an 
+                            in-house media and production team is 
+                            fast becoming the operational norm in modern business. 
+                            Our relationship with IAG’s client-side media 
+                            team represents best practice to get the most 
+                            out of collective efforts while minimising inefficiency. 
                         </motion.p>
                     </div>
                 </div>
@@ -81,16 +83,16 @@ const InHouseSection: React.FC = () => {
                     titleSize='text-3xl'
                     titleColor='text-[#A800FF]'
                     content="Custom-built an integrated process,
-from group briefing sessions, stages and key approval gates and integrated response and optimisation forums"
+                    from group briefing sessions, stages andkey approval gates and integrated response and optimisation forums."
                 />
                 <TextBlock
                     title='INTEGRATED TEMPLATES'
                     titleSize='text-2xl'
                     titleColor='text-[#A800FF]'
                     content="Co-created a bank of templates and frame-
-                            works to encourage active collaboration
-                            at every stage of our process; resulting in
-                            seamless, not ‘baton passed’, outputs."
+                    works to encourage active collaboration
+                    at every stage of our process; resulting in
+                    seamless, not ‘baton passed’, outputs."
                 />
                 <TextBlock
                     title='UNIFIED MEASUREMENT'
@@ -110,8 +112,8 @@ from group briefing sessions, stages and key approval gates and integrated respo
                     titleSize='text-2xl'
                     titleColor='text-[#A800FF]'
                     content='Built a unified learning & development
-                            program covering platform best practice,
-                            accreditation and inspiration forums toensure the whole village is skilled.'
+                    program covering platform best practice,
+                    accreditation and inspiration forums toensure the whole village is skilled.'
                 />
                 <TextBlock
                     title='MEDIA VISIBILITY'
@@ -137,7 +139,7 @@ from group briefing sessions, stages and key approval gates and integrated respo
                         />
 
                         <p className="text-lg mb-12 text-gray-300 mt-6">
-                            Whilst we're incredibly proud of the collaboration we built, we also identified several key optimisations to push the possibilities further. A few examples include:
+                        Whilst we’re incredibly proud of the collaboration we built, we also identified several key optimisations to push the possibilities further. A few examples include:
                         </p>
 
                         <div className="space-y-12">
@@ -174,10 +176,10 @@ from group briefing sessions, stages and key approval gates and integrated respo
             <ImageText
                 imageUrl="/assets/images/Picture 14.png"
                 altText="AFI Ad Bundle"
-                title="Newish Village"
+                title="New(ish) Village"
                 text={[
-                    "With a new vision and approach to marketing, the first external move IAG made was to appoint Accenture Song as their end-to-end customer experience agency. Previously agencies were responsible for making ads and placing them, whereas now they are tasked with digital maturity acceleration, customer marketing, CX strategy and innovation roadmapping to name a few. ",
-                    "This deepens our collaboration with IAG, going beyond just their in-house media team to every single function in their business. "
+                    "With a new vision and approach to marketing, the first external move IAG made was to appoint Accenture Song as their end-to-end customer experience agency. Previously agencies were responsible for making ads and placing them, whereas now they are tasked with digital maturity acceleration, customer marketing, CX strategy and innovation road-mapping to name a few.",
+                    "This deepens our collaboration with IAG, going beyond just their in-house media team to every single function of their business."
                 ]}
                 layout="left"
             />
@@ -186,8 +188,8 @@ from group briefing sessions, stages and key approval gates and integrated respo
                 altText="AFI Ad Bundle"
                 title="New Identity"
                 text={[
-                    "In 2024 NRMA Insurance not only launched a new brand campaign but an entirely new business identity. This reflects a stepchange in the business to become a leader in HELP not just insurance. ",
-                    "To propel this new proposition into the collective conscience of Australia we helped NRMA Insurance become official broadcast sponsors of the Paris Olympic Games – out-negotiating (not simply outspending) IOC partners Allianz and previous tier one broadcast sponsors Suncorp. This was alongside a multi-channel marketing blitz that saw A Help Company become the highest performing brand relaunch to date."]}
+                    "In 2024 NRMA Insurance not only launched a new brand campaign but an entirely new business identity. This reflects a stepchange in the business to become a leader in HELP not just insurance.",
+                    "To propel this new proposition into the collective conscience of Australia we helped NRMA Insurance become official broadcast sponsors of the Paris Olympic Games – out-negotiating (not simply outspending) IOC partners Allianz and previous tier one broadcast sponsors Suncorp. This was alongside a multi-channel marketing blitz that saw A Help Company become the highest performing brand relaunch to date."]}
                 layout="right"
             />
         </div>

@@ -98,8 +98,8 @@ const B2bBrillance: React.FC = () => {
         imageUrl="/assets/images/B2B_TheChallenge.png"
         altText="The Challenge"
         title="The Challenge"
-        text={["CGU a leading commercial, rural and personal lines insurer, and therefore has relied on broker-based distribution for its 160 years in operation. However, a recent strategy change saw the brand open direct-to-consumer channels in a bid to gain greater share.",
-        "Unfortunately, this move created disharmony with the broker community. We needed to build a campaign to rebuild their relationship with brokers – by proving we’re a business partner committed to not just servicing their business but driving it."]}
+        text={["CGU is a leading commercial, rural and personal lines insurer, and therefore has relied on broker-based distribution for its 160 years in operation. However, a recent strategy change saw the brand open direct-to-consumer channels in a bid to gain greater share.",
+        "Unfortunately, this move created disharmony with the broker community. We needed to create a campaign to rebuild their relationship with brokers – by proving we’re a business partner committed to not just servicing their business but driving it."]}
         layout="right"
       />
 
@@ -117,11 +117,12 @@ const B2bBrillance: React.FC = () => {
         imageUrl="/assets/images/B2B_TheExecution.png"
         altText="The Execution"
         title="The Execution"
-        text={["To propel Poppy into culture we ensured as many Australians as possible saw the full five-minute film. Looking at reach, influence and broker consumption indexing we identified 60Minutes as a perfect environment to drive attention. So in a genuine media-first we turned 60Minutes into 55, driving over half-a-million views of our full ad on night one.",
+        text={["To propel Poppy into culture we ensured as many Australians as possible saw the full five-minute film. Looking at reach, influence and broker consumption indexing we identified 60Minutes as a perfect environment to drive attention. So, in a genuine media-first we turned 60Minutes into 55, and broadcast our 5 minute film in a solus ad-break, driving over half-a-million views of our full ad on night one.",
         "This was underpinned by a sophisticated screens strategy to sweat the 5minute film across TV, BVOD, OLV, social and streaming.",
         "Alongside this we used media to break media fourth walls to show Tall Poppy breaking out of conventional barriers – this included the Southern Hemisphere’s first ever 3D Anthropomorphic full motion billboard (since used by dozens of brands).",
         "To ensure Poppy’s mission was lived across the CGU organisation we meticulously mapped and redesigned the brand’s owned media ecosystem – from site-design and experience overhaul, signatures, stationary, social handles, and physical policy collateral.",
-        "All this activity was underpinned with a targeted broker media blitz, featuring big-brand tactics like homepage takeovers (first ever for Insurance News), flip cover feature in NIBA magazine, Tall Poppy collateral for broker conferences and even sending video-embedded direct mail to the personal addresses of the country’s top 8,000 brokers. "]}
+        "All this activity was underpinned with a targeted broker media blitz, featuring big-brand tactics like homepage takeovers (first ever for Insurance News), flip cover feature in NIBA magazine, Tall Poppy collateral for broker conferences and even sending video-embedded direct mail to the personal addresses of the country’s top 8,000 brokers.",
+      ]}
         layout="right"
       />
 
@@ -135,7 +136,7 @@ const B2bBrillance: React.FC = () => {
       <div className='container max-w-[100%]'>
         <img className='w-[100%]' src="assets/images/B2B_TheResults.png" alt="B2B The Results"/>
         <div className="max-w-[1440px] mx-auto">
-        <p className='text-3xl md:text-3xl top-left'>The Results</p>
+        <p className='text-5xl md:text-5xl top-left'>The Results</p>
         <div className="text-container">
             <div className="first-col">
                 <p className="text-6xl md:text-6xl">&gt;500K</p>

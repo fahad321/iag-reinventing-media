@@ -18,18 +18,24 @@ const ProvenEffectivenessSection: React.FC = () => {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#A800FF]">
-          Reinventing Media Drives Business Growth
+          Reinventing Media<br></br>Drives Business Growth
         </h2>
 
         <p className="text-lg text-center mb-4">
-          We went above-and-beyond what any traditional media agency delivers.
+        This is a client/agency partnership that trailblazed new ground in media innovation, upstream strategic partnership and in-depth business collaboration. The likes of which the Australian media-market has never before seen.
         </p>
 
         <p className="text-lg text-center mb-8">
-          We Identified, negotiated and brokered national naming rights partnerships, broadcast television rights, created new distinctive media assets, out-negotiated previous Olympic broadcast partners, built new insurance brands, launched into new categories (Home Loans, Single Item Insurance, Share-Economy Insurance) , Beyond 3% first major brand to commit 3% of their above-the-line media to first nations audiences as part of NITV's Beyond  3% Initiative.
+        The work we created across multiple brands, audiences and crafts was not only career defining but has been recognized consistently on the global stage as world class.<br></br>
+        What we crated and learned together over this time has forged the foundation of our future partnerships with clients and our ambition for elevating the role media can play in business growth, and the broader communications community.<br></br>
+        <br></br>We would like to thank the wonderful people at IAG for their belief, trust and most critically, the opportunity to raise the bar together. Again, and again, and again. 
         </p>
 
-        <Layout cols="grid-cols-3" gap="gap-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#A800FF]">
+          **Highest Growth in 10 years**
+        </h2>
+
+        {/* <Layout cols="grid-cols-3" gap="gap-8">
           <TextBlock
             title="Highest Growth in 10 years"
             titleSize="text-3xl"
@@ -45,14 +51,14 @@ const ProvenEffectivenessSection: React.FC = () => {
             titleSize="text-3xl"
             titleColor="text-[#A800FF]"
           />
-        </Layout>
+        </Layout> */}
 
         <h3 className="text-3xl font-bold text-center mt-16 mb-4 text-[#A800FF]">
           Testimonials from the Top
         </h3>
 
         <p className="text-lg text-center mb-12">
-          Whilst we believe our work should always speak for itself, it's always good to understand from our clients (past and present) what it's like working with us to reinvent media.
+        Whilst we believe our work should always speak for itself, it’s always good to understand from our clients (past and present) what it’s like working with us to reinvent media.
         </p>
 
         <Layout cols="grid-cols-2" gap="gap-10">
@@ -60,13 +66,13 @@ const ProvenEffectivenessSection: React.FC = () => {
             <Video
               videoSrc="/assets/videos/nrma_insurance_fifo_fields_updated.mp4"
             />
-            <p className="mt-4 text-center text-lg">Brent Smart Former IAG Chief Marketing Officer</p>
+            <p className="mt-4 text-center text-lg text-[#A800FF]">Brent Smart<br></br>Former IAG Chief Marketing Officer</p>
           </div>
           <div className="">
             <Video
               videoSrc="/assets/videos/cgu_-_tall_poppy_-_billboard_updated.mp4"
             />
-            <p className="mt-4 text-center text-lg">Michelle Klein IAG Chief Customer & Marketing Officer</p>
+            <p className="mt-4 text-center text-lg text-[#A800FF]">Michelle Klein<br></br>IAG Chief Customer & Marketing Officer</p>
           </div>
         </Layout>
 
