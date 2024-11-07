@@ -35,6 +35,7 @@ const CarouselImages: React.FC<CarouselImageProps> = ({ images, defaultCenterIma
     }
   };
 
+
   return (
     <div className='px-12'>
       <div className="relative w-full h-[400px] overflow-hidden">

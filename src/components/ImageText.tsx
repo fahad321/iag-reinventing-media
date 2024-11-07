@@ -39,7 +39,7 @@ const ImageText: React.FC<ImageTextProps> = ({ imageUrl, altText, title, text, l
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        {title && <h2 className="text-2xl font-bold mb-4">{title}</h2>}
+        {title && <h2 className="text-2xl font-bold mb-4 text-[#A800FF]">{title}</h2>}
         {text.map((paragraph, index) => (
           <motion.p 
             key={index} 

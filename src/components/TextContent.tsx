@@ -26,7 +26,7 @@ const TextContent: React.FC = () => {
         </motion.p>
         {/* Main Heading */}
         <motion.h1 
-          className="text-4xl md:text-6xl font-bold mb-12 leading-tight mt-8"
+          className="text-4xl md:text-6xl font-bold mb-12 leading-tight mt-8 text-[#A800FF]"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -59,7 +59,7 @@ const TextContent: React.FC = () => {
 
         {/* Delivery Statement */}
         <motion.p 
-          className="text-2xl md:text-3xl font-bold mb-12 text-purple-400"
+          className="text-2xl md:text-3xl font-bold mb-12 text-[#A800FF]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -84,7 +84,7 @@ const TextContent: React.FC = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          <h2 className="text-2xl font-bold mb-6 text-gray-300">LOGOS OF AWARD SHOWS</h2>
+          <h2 className="text-2xl font-bold mb-6 text-[#A800FF]">LOGOS OF AWARD SHOWS</h2>
           
           {/* Awards List */}
           <div className="flex flex-wrap gap-4 justify-center">

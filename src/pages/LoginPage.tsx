@@ -17,7 +17,6 @@ const LoginPage: React.FC = () => {
 
   return (
     <>
-    <h3 className="text-2xl mb-4 text-center">For best experience please view on Desktop.</h3>
         
     <div className="flex h-screen justify-center items-center bg-accenturePrimary text-white login-page">
       <form className="bg-gray-800 p-6 rounded-lg" onSubmit={handleLogin}>
@@ -41,6 +40,7 @@ const LoginPage: React.FC = () => {
         </button>
       </form>
     </div>
+    <h3 className="text-2xl mb-4 text-center">For best experience please view on Desktop.</h3>
         </>
   );
 };
