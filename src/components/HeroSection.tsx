@@ -54,10 +54,10 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div id="container1">
-          <p className="text-[#A800FF]">90% Initiative CEO<br></br>10% IAG Relationship Lead</p>
-          <p className="text-[#A800FF]">50% Initiative Managing Director<br></br>50% IAG Client Director</p>
-          <p className="text-[#A800FF]">50% Initiative CSO<br></br>50% IAG Strategy Director</p>
-          <p className="text-[#A800FF]">70% Initiative COO<br></br>30% IAG Transition Lead</p>
+          <p className="text-[#A800FF] py-4">90% Initiative CEO<br></br>10% IAG Relationship Lead</p>
+          <p className="text-[#A800FF] py-4">50% Initiative Managing Director<br></br>50% IAG Client Director</p>
+          <p className="text-[#A800FF] py-4">50% Initiative CSO<br></br>50% IAG Strategy Director</p>
+          <p className="text-[#A800FF] py-4">70% Initiative COO<br></br>30% IAG Transition Lead</p>
         </div>
 
 
@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineLeft">
-            <p className="four-weeks">4<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <p className="four-weeks text-[#A800FF]">4<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
             <hr className="line1"></hr>
             <img src="assets/images/Timeline_AFI.gif"/>
           </div> 
@@ -105,7 +105,7 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineRight">
-            <p className="three-weeks">3<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <p className="three-weeks text-[#A800FF]">3<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
             <hr className="line2"></hr>
             <img src="assets/images/Timeline_CarInsurance.jpg"/>
           </div> 
@@ -117,7 +117,7 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineLeft">
-            <p className="four-weeks">2<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <p className="four-weeks text-[#A800FF]">2<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
             <hr className="line1"></hr>
             <img src="assets/images/Timeline_IMCProcess.png"/>
           </div> 
@@ -129,7 +129,7 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineRight">
-            <p className="one-week">1<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <p className="one-week text-[#A800FF]">1<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
             <hr className="line2"></hr>
             <img src="assets/images/Timeline_NRMA.jpg"/>
           </div> 

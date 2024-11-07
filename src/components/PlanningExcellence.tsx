@@ -194,7 +194,7 @@ const PlanningExcellence: React.FC = () => {
       <Video
         videoSrc="/assets/videos/nrma_insurance._a_fire_inside (1080p).mp4"
       />
-
+    <div className="py-20">
       <Layout cols="grid-cols-4" gap="gap-4">
           <TextBlock
             title='+12M'
@@ -225,10 +225,7 @@ const PlanningExcellence: React.FC = () => {
             contentColor='text-[#00DCFF]'
           />
         </Layout>
-
-        {/* <Video
-        videoSrc="/assets/videos/nrma_insurance._a_fire_inside (1080p).mp4"
-      /> */}
+      </div>
       
       </motion.div>
 
