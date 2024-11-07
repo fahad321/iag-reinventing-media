@@ -1,6 +1,8 @@
 // src/components/CarouselImages.tsx
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 interface CarouselImageProps {
   images: { id: number; src: string; alt: string }[];
@@ -11,10 +13,16 @@ const CarouselImages: React.FC<CarouselImageProps> = ({ images, defaultCenterIma
   const [centerIndex, setCenterIndex] = useState(defaultCenterImage);
   const [isAtStart, setIsAtStart] = useState(defaultCenterImage === 0);
   const [isAtEnd, setIsAtEnd] = useState(defaultCenterImage === images.length - 1);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const autoScrollIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
 
-  const getImageIndex = (index: number) => {
+  const getImageIndex = useCallback((index: number) => {
     return (index + images.length) % images.length;
-  };
+  }, [images.length]);
 
   const moveLeft = () => {
     if (!isAtStart) {
@@ -23,8 +31,8 @@ const CarouselImages: React.FC<CarouselImageProps> = ({ images, defaultCenterIma
       setIsAtStart(newIndex === 0);
       setIsAtEnd(false);
     }
+    setIsAutoScrolling(false);
   };
-
 
   const moveRight = () => {
     if (!isAtEnd) {
@@ -33,11 +41,29 @@ const CarouselImages: React.FC<CarouselImageProps> = ({ images, defaultCenterIma
       setIsAtEnd(newIndex === images.length - 1);
       setIsAtStart(false);
     }
+    setIsAutoScrolling(false);
   };
 
+  useEffect(() => {
+    if (inView && isAutoScrolling) {
+      autoScrollIntervalRef.current = setInterval(() => {
+        setCenterIndex((prevIndex) => getImageIndex(prevIndex + 1));
+      }, 1500); // Auto-scroll every 3 seconds
+    } else {
+      if (autoScrollIntervalRef.current) {
+        clearInterval(autoScrollIntervalRef.current);
+      }
+    }
+
+    return () => {
+      if (autoScrollIntervalRef.current) {
+        clearInterval(autoScrollIntervalRef.current);
+      }
+    };
+  }, [inView, isAutoScrolling, images.length, getImageIndex]);
 
   return (
-    <div className='px-12'>
+    <div className='px-12' ref={ref}>
       <div className="relative w-full h-[400px] overflow-hidden">
         <AnimatePresence initial={false}>
           {[-1, 0, 1].map((offset) => {
@@ -46,8 +72,7 @@ const CarouselImages: React.FC<CarouselImageProps> = ({ images, defaultCenterIma
             return (
               <motion.div
                 key={image.id}
-                className={`absolute top-0 w-1/3 h-full ${offset === 0 ? 'left-1/3' : offset === -1 ? 'left-0' : 'right-0'
-                  }`}
+                className={`absolute top-0 w-1/3 h-full ${offset === 0 ? 'left-1/3' : offset === -1 ? 'left-0' : 'right-0'}`}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: offset === 0 ? 1 : 0.8 }}
                 exit={{ opacity: 0, scale: 0.8 }}

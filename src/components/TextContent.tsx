@@ -1,22 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ScrollingAwards from './ScrollingAwards';
 
 const TextContent: React.FC = () => {
   const awards = [
-    'Spikes',
-    'Festival of Media APAC',
-    'Global',
-    'MFA',
-    'B&T',
-    'AdNews',
-    'AdWeek',
-    'Effies'
+    { name: 'Spikes', image: '/assets/images/Picture 41.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 42.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 43.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 44.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 45.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 46.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 47.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 48.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 49.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 50.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 51.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 52.png' },
+    { name: 'Spikes', image: '/assets/images/Picture 53.png' }
   ];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white py-20 px-4 md:px-8 text-center">
       <div className="max-w-4xl mx-auto">
-      <motion.p 
+        <motion.p
           className="mt-2"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -25,8 +31,8 @@ const TextContent: React.FC = () => {
           Our relationship began with a bold promise.
         </motion.p>
         {/* Main Heading */}
-        <motion.h1 
-          className="text-4xl md:text-6xl font-bold mb-12 leading-tight mt-8 text-[#A800FF]"
+        <motion.h1
+          className="text-4xl md:text-6xl font-bold mb-12 leading-tight mt-8"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -35,7 +41,7 @@ const TextContent: React.FC = () => {
         </motion.h1>
 
         {/* Belief Statement */}
-        <motion.p 
+        <motion.p
           className="text-xl md:text-2xl mb-12 text-gray-300"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +52,7 @@ const TextContent: React.FC = () => {
         </motion.p>
 
         {/* Marketing Team Statement */}
-        <motion.p 
+        <motion.p
           className="text-lg md:text-xl mb-12 text-gray-400"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,8 +66,8 @@ const TextContent: React.FC = () => {
         </motion.p>
 
         {/* Delivery Statement */}
-        <motion.p 
-          className="text-2xl md:text-3xl font-bold mb-12 text-[#A800FF]"
+        <motion.p
+          className="text-2xl md:text-3xl font-bold mb-12 text-purple-400"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -70,7 +76,7 @@ const TextContent: React.FC = () => {
         </motion.p>
 
         {/* Bold Promise */}
-        <motion.p 
+        <motion.p
           className="text-xl md:text-2xl mb-16 text-gray-300"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -80,28 +86,19 @@ const TextContent: React.FC = () => {
         </motion.p>
 
         {/* Awards Section */}
+        {/* Awards Section */}
         <motion.div
           className="space-y-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          <h2 className="text-2xl font-bold mb-6 text-[#A800FF]">LOGOS OF AWARD SHOWS</h2>
-          
-          {/* Awards List */}
-          <div className="flex flex-wrap gap-4 justify-center">
-            {awards.map((award, index) => (
-              <motion.span
-                key={index}
-                className="px-4 py-2 bg-gray-800 rounded-full text-sm md:text-base hover:bg-purple-600 transition-colors duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {award}
-              </motion.span>
-            ))}
-          </div>
+          <h2 className="text-2xl font-bold mb-6 text-gray-300">LOGOS OF AWARD SHOWS</h2>
+
+          {/* Scrolling Awards */}
+          <ScrollingAwards awards={awards} />
         </motion.div>
+
       </div>
     </div>
   );

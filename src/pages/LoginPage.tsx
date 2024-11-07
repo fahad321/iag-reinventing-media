@@ -16,32 +16,33 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <>
-        
-    <div className="flex h-screen justify-center items-center bg-accenturePrimary text-white login-page">
-      <form className="bg-gray-800 p-6 rounded-lg" onSubmit={handleLogin}>
-        <h1 className="text-2xl mb-4">Accenture Song</h1>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          className="p-2 mb-4 w-full"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="p-2 mb-4 w-full"
-        />
-        <button type="submit" className="w-full p-2 bg-accentureSecondary login-text">
-          Login
-        </button>
-      </form>
+    <div className="flex items-center justify-center min-h-screen bg-accenturePrimary text-white login-page">
+      <div className="w-full max-w-md">
+        <form className="bg-gray-800 p-6 rounded-lg mb-4" onSubmit={handleLogin}>
+          <h1 className="text-2xl mb-4">Accenture Song</h1>
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="p-2 mb-4 w-full"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="p-2 mb-4 w-full"
+          />
+          <button type="submit" className="w-full p-2 bg-accentureSecondary login-text">
+            Login
+          </button>
+        </form>
+        <h3 className="text-2xl text-center mt-4 text-white whitespace-nowrap text-ellipsis">
+          For best experience please view on Desktop.
+        </h3>
+      </div>
     </div>
-    <h3 className="text-2xl mb-4 text-center">For best experience please view on Desktop.</h3>
-        </>
   );
 };
 

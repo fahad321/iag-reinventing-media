@@ -170,7 +170,7 @@ const InnovativeMediaSection: React.FC = () => {
                 altText="AFI Ad Bundle"
                 text={[
                     "Born from the insight that Australia’s most watched game was also the most washed out (the Sydney Test is the most rain effected game in international cricket) we set out to prove NRMA Insurance’s promise by protecting the pitch itself.",
-                   "This simple act became the talk of the series, and whilst other advertisers chased sporadic 30” ads in cluttered ad-blocks, NRMA Insurance received over 6hrs of high-definition, in-broadcast coverage… surrounded by swooning commentary about how the marketing play was ‘genius’.",
+                   "This simple act became the talk of the series, and whilst other advertisers chased sporadic 30” ads in cluttered ad-blocks, NRMA Insurance received over 6hrs of high-definition, in-broadcast coverage… surrounded by swooning commentary about how the marketing play was ‘genius’.",
                     "We aligned this with swapping out all collateral with custom recuts of NRMA Insurance’s hero creative and even created pink alternate covers in case it rained during the iconic ‘Pink Test’; which it did.",
                     "All helping NRMA Insurance become synonymous with cricket in just its first year in the game."
                 ]}
@@ -196,28 +196,28 @@ const InnovativeMediaSection: React.FC = () => {
                             titleSize='text-5xl'
                             titleColor='text-[#A800FF]'
                             content="AUSTRALIANS REACHED"
-                            contentColor='text-[#00DCFF]'
+                            contentColor='text-white'
                         />
                         <TextBlock
                             title='#3'
                             titleSize='text-5xl'
                             titleColor='text-[#A800FF]'
                             content="SPONSOR IN YEAR ONE(behind 20 yr sponsors CBA/KFC)"
-                            contentColor='text-[#00DCFF]'
+                            contentColor='text-white'
                         />
                         <TextBlock
                             title='21%'
                             titleSize='text-5xl'
                             titleColor='text-[#A800FF]'
                             content="NON-CUSTOMER CONSIDERATION"
-                            contentColor='text-[#00DCFF]'
+                            contentColor='text-white'
                         />
                         <TextBlock
                             title='+$3M'
                             titleSize='text-5xl'
                             titleColor='text-[#A800FF]'
                             content="EARNED MEDIA EXPOSURE OF COVERS ALONES"
-                            contentColor='text-[#00DCFF]'
+                            contentColor='text-white'
                         />
                     </Layout>
 
