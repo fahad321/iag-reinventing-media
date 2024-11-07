@@ -117,8 +117,8 @@ const HeroSection: React.FC = () => {
 
         <div id="container">
           <div className="timelineLeft">
-            <p className="two-weeks">2<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
-            <hr className="line3"></hr>
+            <p className="four-weeks">2<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
+            <hr className="line1"></hr>
             <img src="assets/images/Timeline_IMCProcess.png"/>
           </div> 
         </div>
@@ -130,7 +130,7 @@ const HeroSection: React.FC = () => {
         <div id="container">
           <div className="timelineRight">
             <p className="one-week">1<br></br>WEEKS UNTIL<br></br>ONBOARDING</p>
-            <hr className="line4"></hr>
+            <hr className="line2"></hr>
             <img src="assets/images/Timeline_NRMA.jpg"/>
           </div> 
         </div>

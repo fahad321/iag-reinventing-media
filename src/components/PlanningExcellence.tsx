@@ -5,9 +5,9 @@ import ImageText from './ImageText';
 
 const PlanningExcellence: React.FC = () => {
   return (
-    <Parallax className="min-h-screen bg-gradient-to-r flex items-center justify-center px-4" speed={-10}>
+    <Parallax className="" speed={-10}>
       <motion.div 
-        className="text-center max-w-4xl"
+        className="text-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -19,7 +19,7 @@ const PlanningExcellence: React.FC = () => {
           to deliver compounded effectiveness.
         </p> */}
         
-        <img className='hero-section--banner-image my-16' src="assets/images/AFI_Plane.jpg" alt="AFI Plane"/>
+        <img className='hero-section--banner-image h-screen' src="assets/images/AFI_Plane.jpg" alt="AFI Plane"/>
 
       <motion.p 
           className="text-m md:text-m mb-8 margin-test"

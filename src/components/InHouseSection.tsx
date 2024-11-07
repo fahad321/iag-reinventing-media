@@ -74,13 +74,14 @@ const InHouseSection: React.FC = () => {
             <div className='my-16'>
             <TextBlock titleSize='text-5xl' titleColor='text-[#A800FF]' title="One Team, One Dream." content='Below are a few ways we ensured seamless delivery of a truly integrated experience.' />
             </div>
+            <div className='max-w-[1480px] mx-auto px-16'>
             <Layout cols="grid-cols-3" gap="gap-8">
                 <TextBlock
                     title='IMC PROCESS OVERHAUL'
                     titleSize='text-3xl'
                     titleColor='text-[#A800FF]'
                     content="Custom-built an integrated process,
-from group briefing sessions, stages andkey approval gates and integrated response and optimisation forums"
+from group briefing sessions, stages and key approval gates and integrated response and optimisation forums"
                 />
                 <TextBlock
                     title='INTEGRATED TEMPLATES'
@@ -119,7 +120,7 @@ from group briefing sessions, stages andkey approval gates and integrated resp
                     content='Unlike other agencies who safeguardrelationships, IAG’s in-house mediateam were invited to all publisher briefing sessions & workshops.'
                 />
             </Layout>
-
+            </div>
             <div className="in-house-section  text-white my-8">
                 <Parallax className="py-24 md:py-24 px-8 md:px-16" speed={-10}>
                     <motion.div

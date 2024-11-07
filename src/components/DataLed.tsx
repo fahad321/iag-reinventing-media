@@ -6,9 +6,9 @@ import HeroBanner from './HeroBanner';
 
 const DataLed: React.FC = () => {
   return (
-    <Parallax className="min-h-screen bg-gradient-to-r flex items-center justify-center px-4" speed={-10}>
+    <Parallax className="" speed={-10}>
       <motion.div 
-        className="text-center max-w-4xl"
+        className="text-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

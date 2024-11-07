@@ -77,9 +77,9 @@ const imageSlides = [
 
 const B2bBrillance: React.FC = () => {
   return (
-    <Parallax className="min-h-screen bg-gradient-to-r flex items-center justify-center px-4" speed={-10}>
+    <Parallax className="" speed={-10}>
       <motion.div 
-        className="text-center max-w-4xl"
+        className="text-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -132,8 +132,9 @@ const B2bBrillance: React.FC = () => {
         title=""
         videoSrc="/assets/videos/cgu_tall_poppy.mp4"
       />
-      <div className='container'>
-        <img src="assets/images/B2B_TheResults.png" alt="B2B The Results"/>
+      <div className='container max-w-[100%]'>
+        <img className='w-[100%]' src="assets/images/B2B_TheResults.png" alt="B2B The Results"/>
+        <div className="max-w-[1440px] mx-auto">
         <p className='text-3xl md:text-3xl top-left'>The Results</p>
         <div className="text-container">
             <div className="first-col">
@@ -152,6 +153,7 @@ const B2bBrillance: React.FC = () => {
                 <p className="text-6xl md:text-6xl">+XX%</p>
                 <p className="text-xs md:text-xs">XXXXXX</p>
             </div>
+        </div>
         </div>
         <div className="spacer1"></div>
         <div className="spacer2"></div>

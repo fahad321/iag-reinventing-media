@@ -19,12 +19,12 @@ const ImageText: React.FC<ImageTextProps> = ({ imageUrl, altText, title, text, l
     bottom: 'flex flex-col-reverse',
   };
 
-  const imageClasses = 'w-1/2 object-cover';
-  const textClasses = 'w-1/2 p-6 flex flex-col justify-center';
+  const imageClasses = 'w-1/2 object-contain';
+  const textClasses = 'w-1/2 p-6 flex flex-col justify-left text-left';
 
   return (
     <div className='my-40'>
-    <Parallax className={`${containerClasses[layout]} my-8`} speed={-10}>
+    <Parallax className={`${containerClasses[layout]} my-8 max-w-[1450px]  mx-auto px-14`} speed={-10}>
       <motion.img 
         src={imageUrl} 
         alt={altText} 

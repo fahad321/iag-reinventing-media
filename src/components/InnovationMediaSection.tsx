@@ -39,6 +39,74 @@ const imageSlides = [
         src: '/assets/images/Picture 9.jpg',
         alt: 'Image 6',
     },
+    {
+        id: 24,
+        src: '/assets/images/Picture 24.png',
+        alt: 'Image 24',
+    },
+    {
+        id: 25,
+        src: '/assets/images/Picture 25.jpg',
+        alt: 'Image 25',
+    },
+    {
+        id: 26,
+        src: '/assets/images/Picture 26.png',
+        alt: 'Image 26',
+    },
+    {
+        id: 27,
+        src: '/assets/images/Picture 27.png',
+        alt: 'Image 27',
+    },
+    {
+        id: 28,
+        src: '/assets/images/Picture 28.jpg',
+        alt: 'Image 28',
+    },
+    {
+        id: 29,
+        src: '/assets/images/Picture 29.png',
+        alt: 'Image 29',
+    },
+    {
+        id: 31,
+        src: '/assets/images/Picture 31.jpg',
+        alt: 'Image 31',
+    },
+    {
+        id: 32,
+        src: '/assets/images/Picture 32.jpg',
+        alt: 'Image 32',
+    },
+    {
+        id: 33,
+        src: '/assets/images/Picture 33.jpg',
+        alt: 'Image 33',
+    },
+
+
+    {
+        id: 34,
+        src: '/assets/images/Picture 34.jpg',
+        alt: 'Image 34',
+    },
+    {
+        id: 36,
+        src: '/assets/images/Picture 36.png',
+        alt: 'Image 36',
+    },
+    {
+        id: 38,
+        src: '/assets/images/Picture 38.jpg',
+        alt: 'Image 38',
+    },
+    {
+        id: 39,
+        src: '/assets/images/Picture 39.jpg',
+        alt: 'Image 39',
+    }
+
     // ... add more images as needed
 ];
 
@@ -112,7 +180,7 @@ const InnovativeMediaSection: React.FC = () => {
 
             {/* Carousel Image component */}
             <CarouselImages images={imageSlides} defaultCenterImage={3} />
-            <Parallax className="py-24 md:py-24" speed={-10}>
+            <Parallax className="py-24 md:py-24 max-w-[1250px] mx-auto" speed={-10}>
                 <motion.div
                     className=""
                     initial={{ opacity: 0, y: 50 }}

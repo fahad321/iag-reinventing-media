@@ -1,144 +1,99 @@
 // Styles for hero section
 
-
-
 #container1 {
-
     display: flex;
-
     justify-content: space-between;
-
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px;
 }
 
 
 #container {
-
     display: flex;
-
     justify-content: space-between;
-
+    position: relative;
 }
 
 
 #container1 img {
-
     border-radius: 50%;
-
     height: 200px;
-
     width: 200px;
-
 }
 
 
 #container img {
-
     border-radius: 50%;
-
     height: 150px;
-
     width: 150px;
-
 }
 
 
 .margin-test {
-
     margin-top: 40px;
-
     margin-left: 150px;
-
     margin-right: 150px;
-
 }
 
 
 .vl {
-
     border-left: 6px solid white;
-
     height: 1100px;
-
     position: absolute;
-
     left: 50%;
-
     margin-left: -3px;
-
     z-index: 2;
-
 }
 
 
 .line1 {
-
     position: absolute;
-
     border-top: 1px dashed white;
-
     width: 200px;
-
-    margin-left: 11%;
-    
-    margin-top: 5%;
-
+    top: 60%;
+    left: 50%;
+    transform: translate(-100%, 0);
 }
 
-.four-weeks{
-
+.four-weeks {
     position: absolute;
-
     text-align: right;
-
-    margin-left: -8%;
-
-    margin-top: 2%;
+    right: 87%;
+    top: 32%;
 }
 
-.three-weeks{
+.three-weeks {
 
     position: absolute;
-
     text-align: left;
-
-    margin-left: 11%;
-
-    margin-top: 2%;
+    top: 20%;
+    right: 0%;
 }
 
-.two-weeks{
+.two-weeks {
 
     position: absolute;
-
     text-align: right;
-
     margin-left: -8%;
-
     margin-top: 2%;
 }
 
-.one-week{
+.one-week {
 
     position: absolute;
-
     text-align: left;
-
-    margin-left: 11%;
-
-    margin-top: 2%;
+    right: 0%;
+    top: 15%;
 }
 
 .line2 {
 
     position: absolute;
-
     border-top: 1px dashed white;
-
     width: 200px;
-
-    margin-left: -15%;
-
-    margin-top: 5%;
+    top: 50%;
+    left: 50%;
 
 }
 
@@ -172,12 +127,16 @@
 
 }
 
+.timeline {
+    max-width: 1000px;
+    margin: auto;
+}
 
 #container .timelineLeft {
 
     margin-left: 150px;
 
-     margin-top: 3%;
+    margin-top: 3%;
 
 }
 
@@ -186,7 +145,7 @@
 
     z-index: 2;
 
-    margin-left: 72%;
+    margin-left: 70%;
 
 }
 
@@ -213,7 +172,8 @@
 
 
 #ThreeCircles {
-
+    max-width: 1440px;
+    margin: auto;
     display: flex;
 
     justify-content: space-between;
@@ -245,7 +205,7 @@
 
 }
 
-.hero-section--banner-image{
+.hero-section--banner-image {
     width: 100%;
 }
 
