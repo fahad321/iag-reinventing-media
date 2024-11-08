@@ -140,19 +140,19 @@ const B2bBrillance: React.FC = () => {
         <div className="text-container">
             <div className="first-col">
                 <p className="text-6xl md:text-6xl">&gt;500K</p>
-                <p className="text-xs md:text-xs">WATCHED FULL 5 MINUTE<br></br>PREMIERE IN 60MINUTES</p>
+                <p className="text-xs md:text-xs py-2">WATCHED FULL 5 MINUTE<br></br>PREMIERE IN 60MINUTES</p>
             </div>
             <div className="second-col">
                 <p className="text-6xl md:text-6xl">60%</p>
-                <p className="text-xs md:text-xs">OF AUSTRALIANS REACHED<br></br>VIA EARNED</p>
+                <p className="text-xs md:text-xs py-2">OF AUSTRALIANS REACHED<br></br>VIA EARNED</p>
             </div>
             <div className="third-col">
-                <p className="text-6xl md:text-6xl">+XX%</p>
-                <p className="text-xs md:text-xs">BROKER<br></br>CONSIDERATION</p>
+                <p className="text-6xl md:text-6xl">+46%</p>
+                <p className="text-xs md:text-xs py-2">BROKER<br></br>CONSIDERATION (4x ORIGINAL GOAL)</p>
             </div>
             <div className="fourth-col">
-                <p className="text-6xl md:text-6xl">+XX%</p>
-                <p className="text-xs md:text-xs">XXXXXX</p>
+                <p className="text-6xl md:text-6xl">+12.7pt</p>
+                <p className="text-xs md:text-xs py-2">GROWTH IN BROKER NPS</p>
             </div>
         </div>
         </div>
