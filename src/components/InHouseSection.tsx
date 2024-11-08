@@ -73,7 +73,7 @@ const InHouseSection: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='my-16 mx-20'>
+            <div className='my-16 max-w-full 2xl:max-w-[1440px] mx-auto pl-16'>
             <TextBlock titleSize='text-5xl' titleColor='text-[#A800FF]' title="One Team, One Dream." content='Below are a few ways we ensured seamless delivery of a truly integrated experience.' />
             </div>
             <div className='max-w-[1480px] mx-auto px-16'>
