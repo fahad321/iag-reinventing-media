@@ -7,12 +7,13 @@ import { useInView } from 'react-intersection-observer';
 interface HeroBannerProps {
   videoSrc: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   textPosition: 'center' | 'left' | 'right';
-  imageSrc?: string; // Add this line
+  imageSrc?: string;
+  logoSrc?: string; // Add this line
 }
 
-const HeroBanner: React.FC<HeroBannerProps> = ({ videoSrc, title, subtitle, textPosition, imageSrc }) => {
+const HeroBanner: React.FC<HeroBannerProps> = ({ videoSrc, title, subtitle, textPosition, imageSrc, logoSrc }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [showImage, setShowImage] = useState(!!imageSrc);
   const [ref, inView] = useInView({
@@ -38,7 +39,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ videoSrc, title, subtitle, text
   const getTextPositionClass = () => {
     switch (textPosition) {
       case 'left':
-        return 'items-start text-left pl-8';
+        return 'items-start text-left pl-20';
       case 'right':
         return 'items-end text-right pr-8';
       default:
@@ -78,6 +79,15 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ videoSrc, title, subtitle, text
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
+        {logoSrc && (
+          <img
+            src={logoSrc}
+            alt="Logo"
+            className={`w-28 h-24 mb-4 ${textPosition === 'left' ? 'mr-auto' :
+                textPosition === 'right' ? 'ml-auto' : 'mx-auto'
+              }`}
+          />
+        )}
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           {title}
         </h1>

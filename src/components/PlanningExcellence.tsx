@@ -194,7 +194,7 @@ const PlanningExcellence: React.FC = () => {
       <Video
         videoSrc="/assets/videos/nrma_insurance._a_fire_inside (1080p).mp4"
       />
-    <div className="mx-40 py-20">
+    <div className="pl-20 py-20 max-w-[1440px] mx-auto">
       <Layout cols="grid-cols-4" gap="gap-4">
           <TextBlock
             title='+12M'
@@ -207,7 +207,7 @@ const PlanningExcellence: React.FC = () => {
             title='#1'
             titleSize='text-5xl'
             titleColor='text-[#A800FF]'
-            content="AUSTRALIANDOCUMENTARY OF ‘21"
+            content="AUSTRALIAN DOCUMENTARY OF ‘21"
             contentColor='text-[#00DCFF]'
           />
           <TextBlock

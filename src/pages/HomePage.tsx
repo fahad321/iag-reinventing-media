@@ -13,10 +13,10 @@ const HomePage: React.FC = () => {
     >
       <HeroBanner
         videoSrc="/assets/videos/nrma_insurance_cricket_covers.mp4"
-        title="Welcome to IAG Media"
-        subtitle="Delivering distinctive media solutions that drive creative excellence"
+        title="A Case Study in Reinventing Media"
         textPosition="center"
         imageSrc='/assets/images/Picture 23.png'
+        logoSrc='/assets/images/Picture 61.png'
       />
       <TextContent />
       <Carousel />

@@ -20,6 +20,7 @@ const DataLed: React.FC = () => {
         title="Expanding NRMA Across Australia."
         subtitle="2021 represented a milestone in NRMA Insurances’ 100 year history as they finally expanded the business into Western and South Australia to become a truly national brand.         "
         textPosition="left"
+        logoSrc='/assets/images/Picture 62.png'
       />
       </div>
 
