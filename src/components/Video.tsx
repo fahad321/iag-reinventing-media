@@ -1,5 +1,5 @@
 // src/components/Video.tsx
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -10,19 +10,29 @@ interface VideoProps {
 
 const Video: React.FC<VideoProps> = ({ title, videoSrc }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: false,
   });
 
-  useEffect(() => {
-    if (inView && videoRef.current) {
-      videoRef.current.play();
-    } else if (!inView && videoRef.current) {
-      videoRef.current.pause();
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
     }
-  }, [inView]);
+  };
 
+  useEffect(() => {
+    if (!inView && isPlaying && videoRef.current) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  }, [inView, isPlaying]);
 
   return (
     <div className="text-white py-8 px-4 flex items-center justify-center">
@@ -40,10 +50,24 @@ const Video: React.FC<VideoProps> = ({ title, videoSrc }) => {
               ref={videoRef}
               className="w-full h-full object-cover rounded-lg"
               src={videoSrc}
-              muted
-              loop
-              playsInline
+              onClick={togglePlay}
             />
+            {!isPlaying && (
+              <div
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center cursor-pointer"
+                onClick={togglePlay}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="11" fill="black" opacity="0.7" />
+                  <path d="M8 5v14l11-7z" fill="white" />
+                </svg>
+              </div>
+            )}
           </div>
         </div>
       </motion.div>
