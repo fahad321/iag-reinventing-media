@@ -143,7 +143,7 @@ const InnovativeMediaSection: React.FC = () => {
 
             {/* Text on left and image on right */}
             <ImageText
-                imageUrl="/assets/images/Picture 3.png"
+                imageUrl="/assets/images/InnovationinMedia-TheMediaStrategy.png"
                 altText="Annual Portfolio Planning"
                 title='The Media Strategy'
                 text={[
@@ -155,20 +155,12 @@ const InnovativeMediaSection: React.FC = () => {
             />
 
             <ImageText
-                imageUrl="/assets/images/Picture 3.png"
+                imageUrl="/assets/images/Picture 22.png"
                 altText="AFI Ad Bundle"
                 title="The Execution"
                 text={[
                     "Our partnership started by painting the series blue, commanding as much premium partnership inventory to make NRMA Insurance synonymous with the game.",
-                    "We then surrounded all cricket content with public declarations of our support, showcasing why and how NRMA Insurance are Proud Helpers of Australian Cricket. Full page advertisements in sports news, an out-of-home blitz (upweighted around cricket precincts across the nation), innovative integrations in Seven’s cross-platform coverage and even the creation of an entirely new distinctive media device, one left untapped for centuries…"
-                ]}
-                layout="right"
-            />
-
-            <ImageText
-                imageUrl="/assets/images/Picture 22.png"
-                altText="AFI Ad Bundle"
-                text={[
+                    "We then surrounded all cricket content with public declarations of our support, showcasing why and how NRMA Insurance are Proud Helpers of Australian Cricket. Full page advertisements in sports news, an out-of-home blitz (upweighted around cricket precincts across the nation), innovative integrations in Seven’s cross-platform coverage and even the creation of an entirely new distinctive media device, one left untapped for centuries…",
                     "Born from the insight that Australia’s most watched game was also the most washed out (the Sydney Test is the most rain effected game in international cricket) we set out to prove NRMA Insurance’s promise by protecting the pitch itself.",
                    "This simple act became the talk of the series, and whilst other advertisers chased sporadic 30” ads in cluttered ad-blocks, NRMA Insurance received over 6hrs of high-definition, in-broadcast coverage… surrounded by swooning commentary about how the marketing play was ‘genius’.",
                     "We aligned this with swapping out all collateral with custom recuts of NRMA Insurance’s hero creative and even created pink alternate covers in case it rained during the iconic ‘Pink Test’; which it did.",

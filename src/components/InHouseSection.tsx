@@ -123,7 +123,7 @@ const InHouseSection: React.FC = () => {
                 />
             </Layout>
             </div>
-            <div className="in-house-section  text-white my-8">
+            <div className="in-house-section  text-white my-20">
                 <Parallax className="py-24 md:py-24 px-8 md:px-16" speed={-10}>
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}

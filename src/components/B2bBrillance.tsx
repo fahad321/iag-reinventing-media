@@ -148,7 +148,7 @@ const B2bBrillance: React.FC = () => {
             </div>
             <div className="third-col">
                 <p className="text-6xl md:text-6xl">+46%</p>
-                <p className="text-xs md:text-xs py-2">BROKER<br></br>CONSIDERATION (4x ORIGINAL GOAL)</p>
+                <p className="text-xs md:text-xs py-2">BROKERCONSIDERATION<br></br>(4x ORIGINAL GOAL)</p>
             </div>
             <div className="fourth-col">
                 <p className="text-6xl md:text-6xl">+12.7pt</p>

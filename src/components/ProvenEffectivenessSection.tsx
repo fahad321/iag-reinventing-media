@@ -70,7 +70,7 @@ const ProvenEffectivenessSection: React.FC = () => {
           </div>
           <div className="">
             <Video
-              videoSrc="/assets/videos/cgu_-_tall_poppy_-_billboard_updated.mp4"
+              videoSrc="/assets/videos/MicrosoftTeams-Michelle.mp4"
             />
             <p className="mt-4 text-center text-lg text-[#A800FF]">Michelle Klein<br></br>IAG Chief Customer & Marketing Officer</p>
           </div>

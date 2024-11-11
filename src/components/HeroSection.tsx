@@ -39,27 +39,26 @@ const HeroSection: React.FC = () => {
             For the first six-months of our relationship, IAG received C-suite talent as their day-to-day team to ensure seamless transition, platinum-tier product delivery and relationship access, to make the impossible, possible.
           </motion.p>
 
-          <div id="container1">
-            <div>
-              <img src="assets/images/Portrait1.jpg" />
-            </div>
-            <div>
-              <img src="assets/images/Portrait2.jpg" />
-            </div>
-            <div>
-              <img src="assets/images/Portrait3.jpg" />
-            </div>
-            <div>
-              <img src="assets/images/Portrait4.jpg" />
-            </div>
-          </div>
-
-          <div id="container1">
+        <div id="container1">
+          <div>
+            <img src="assets/images/Portrait1.jpg"/>
             <p className="text-[#A800FF] py-4">90% Initiative CEO<br></br>10% IAG Relationship Lead</p>
-            <p className="text-[#A800FF] py-4">50% Initiative Managing Director<br></br>50% IAG Client Director</p>
-            <p className="text-[#A800FF] py-4">50% Initiative CSO<br></br>50% IAG Strategy Director</p>
-            <p className="text-[#A800FF] py-4">70% Initiative COO<br></br>30% IAG Transition Lead</p>
           </div>
+          <div>
+          <img className="portrait2" src="assets/images/Portrait2.jpg"/>
+          <p className="text-[#A800FF] py-4">50% Initiative Managing Director<br></br>50% IAG Client Director</p>
+          </div> 
+          <div>
+            <img src="assets/images/Portrait3.jpg"/>
+            <p className="text-[#A800FF] py-4">50% Initiative CSO<br></br>50% IAG Strategy Director</p>
+          </div> 
+          <div>
+            <img src="assets/images/Portrait4.jpg"/>
+            <p className="text-[#A800FF] py-4">70% Initiative COO<br></br>30% IAG Transition Lead</p>
+          </div> 
+        </div>
+
+
 
 
           <motion.p

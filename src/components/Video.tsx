@@ -23,6 +23,7 @@ const Video: React.FC<VideoProps> = ({ title, videoSrc }) => {
     }
   }, [inView]);
 
+
   return (
     <div className="text-white py-8 px-4 flex items-center justify-center">
       <motion.div
