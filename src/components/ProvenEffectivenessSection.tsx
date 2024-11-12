@@ -64,7 +64,7 @@ const ProvenEffectivenessSection: React.FC = () => {
         <Layout cols="grid-cols-2" gap="gap-10">
           <div className="">
             <Video
-              videoSrc="/assets/videos/nrma_insurance_fifo_fields_updated.mp4"
+              videoSrc="/assets/videos/MicrosoftTeams-Brett.mp4"
             />
             <p className="mt-4 text-center text-lg text-[#A800FF]">Brent Smart<br></br>Former IAG Chief Marketing Officer</p>
           </div>
