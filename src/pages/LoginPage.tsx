@@ -8,7 +8,7 @@ const LoginPage: React.FC = () => {
 
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
-    if (username === 'Accenture' && password === 'Song2024') {
+    if (username === 'Accenture' && password === 'Song1234') {
       navigate('/home');
     } else {
       alert('Invalid credentials');
